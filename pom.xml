@@ -167,6 +167,11 @@
 			<url>https://nexus.cessda.eu/repository/maven-releases</url>
 		</repository>
 		<repository>
+			<id>cessda-nexus-snapshot</id>
+			<name>CESSDA Nexus Snapshot Repository</name>
+			<url>https://nexus.cessda.eu/repository/maven-snapshots</url>
+		</repository>
+		<repository>
 			<id>gesis-public</id>
 			<url>https://maven.gesis.org/repositories/gesis-public</url>
 		</repository>
