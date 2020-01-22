@@ -26,8 +26,9 @@
 		</menu>
 		<menu name="User Documentation">
 			<item name="Features" href="user-documentation/features.html"/>
+			<item name="Constraint Catalog" href="user-documentation/constraint-catalog.html"/>
 		</menu>
-		<menu name="Code Documentation">
+		<menu name="Developer Documentation">
 			<item name="Java API" href="apidocs/index.html" />
 			<item name="Coverage" href="jacoco/index.html" />
 		</menu>
