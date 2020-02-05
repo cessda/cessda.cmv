@@ -135,7 +135,32 @@
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.0.0</version>
             </plugin>
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.33.0</version>
+				<configuration>
+					<images>
+						<image>
+							<name>cmv:latest</name>
+							<build>
+								<dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
+								<contextDir>${project.basedir}/target/docker-context</contextDir>
+							</build>
+						</image>
+					</images>
+				</configuration>
+			</plugin>
+            
 		</plugins>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/target/site</directory>
+				<filtering>false</filtering>
+				<targetPath>${project.basedir}/target/docker-context/site</targetPath>
+				<includes><include>**/*</include></includes>
+			</resource>
+		</resources>
 	</build>
 
 	<licenses>
