@@ -3,5 +3,5 @@
 This repository holds all documentation about CESSDA Metadata Validator project. To generate the site execute
 
 ```
-mvn clean site
+mvn clean site docker:build
 ```

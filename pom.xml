@@ -12,6 +12,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<doclint>none</doclint><!-- https://blog.joda.org/2014/02/turning-off-doclint-in-jdk-8-javadoc.html -->
+		<docker.image.name>${project.groupId}/${project.artifactId}</docker.image.name>
 	</properties>
 
 	<dependencies>
@@ -24,11 +25,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.1.0</version>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -135,7 +131,67 @@
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.0.0</version>
             </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.8</version>
+				<executions>
+					<execution>
+						<phase>pre-site</phase>
+						<configuration>
+							<!-- https://stackoverflow.com/a/44033580 -->
+							<exportAntProperties>true</exportAntProperties>
+							<target>
+								<condition property="isSnapshot"><contains string="${project.version}" substring="SNAPSHOT"/></condition>
+								<condition property="docker.registry.host" value="docker-private-snapshots.gesis.intra"><isset property="isSnapshot"/></condition>
+								<property name="docker.registry.host" value="docker-private-releases.gesis.intra" />
+								<condition property="docker.image.tag" value="${git.branch}"><isset property="isSnapshot"/></condition>
+								<property name="docker.image.tag" value="${project.version}" />
+							</target>
+						</configuration>
+						<goals><goal>run</goal></goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.33.0</version>
+				<configuration>
+					<images>
+						<image>
+							<name>${docker.registry.host}/${docker.image.name}:${docker.image.tag}</name>
+							<build>
+								<dockerFile>${project.basedir}/src/docker/Dockerfile</dockerFile>
+								<contextDir>${project.basedir}/target/docker/context</contextDir>
+							</build>
+						</image>
+					</images>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<phase>site</phase>
+						<goals><goal>resources</goal></goals>
+						<configuration>
+							<encoding>UTF-8</encoding>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/target/site</directory>
+				<filtering>false</filtering>
+				<targetPath>${project.basedir}/target/docker/context/site</targetPath>
+				<includes><include>**/*</include></includes>
+			</resource>
+		</resources>
 	</build>
 
 	<licenses>
