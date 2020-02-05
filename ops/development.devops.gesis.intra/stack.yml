@@ -1,0 +1,15 @@
+version: '3'
+services:
+  cmv:
+    image: docker-private.gesis.intra/eu.cessda.cmv/cmv:${CI_COMMIT_REF_NAME}
+    deploy:
+      labels:
+        traefik.port: "8080"
+        traefik.frontend.rule: "Host:${CI_COMMIT_REF_SLUG}.${CI_PROJECT_PATH_SLUG}.development.devops.gesis.intra"
+        traefik.docker.network: "traefik-net"
+      placement:
+        constraints: [node.role == worker]
+networks:
+  default:
+    external:
+      name: traefik-net

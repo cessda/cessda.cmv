@@ -1,0 +1,39 @@
+stages:
+  - deploy
+
+docker-private.gesis.intra:
+  stage: deploy
+  image: docker-private.gesis.intra/gesis/dc-maven:5.2
+  services:
+    - name: docker-private.gesis.intra/gesis/dind:5.0
+      alias: docker
+  script:
+    - mvn clean site docker:build docker:push
+  only:
+    - master
+    - stable
+
+Deliver development.devops.gesis.intra:
+  stage: deliver
+  image: docker-private.gesis.intra/gesis/swarm-devops:1.1
+  script:
+    - docker stack deploy --compose-file ./ops/development.devops.gesis.intra/stack.yml --resolve-image always ${CI_PROJECT_ID}_${CI_ENVIRONMENT_SLUG}
+  environment:
+    name: $CI_COMMIT_REF_NAME
+    url: http://$CI_COMMIT_REF_SLUG.$CI_PROJECT_PATH_SLUG.development.devops.gesis.intra
+    on_stop: Clear development.devops.gesis.intra
+  only:
+    - master
+    - stable
+
+Clear development.devops.gesis.intra:
+  stage: deliver
+  image: docker-private.gesis.intra/gesis/swarm-devops:1.1
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - docker stack rm ${CI_PROJECT_ID}_${CI_ENVIRONMENT_SLUG}
+  environment:
+    name: $CI_COMMIT_REF_NAME
+    action: stop
+  when: manual
