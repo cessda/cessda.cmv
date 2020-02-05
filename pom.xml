@@ -162,8 +162,8 @@
 						<image>
 							<name>${docker.registry.host}/${docker.image.name}:${docker.image.tag}</name>
 							<build>
-								<dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
-								<contextDir>${project.basedir}/target/docker-context</contextDir>
+								<dockerFile>${project.basedir}/src/docker/Dockerfile</dockerFile>
+								<contextDir>${project.basedir}/target/docker/context</contextDir>
 							</build>
 						</image>
 					</images>
@@ -188,7 +188,7 @@
 			<resource>
 				<directory>${project.basedir}/target/site</directory>
 				<filtering>false</filtering>
-				<targetPath>${project.basedir}/target/docker-context/site</targetPath>
+				<targetPath>${project.basedir}/target/docker/context/site</targetPath>
 				<includes><include>**/*</include></includes>
 			</resource>
 		</resources>
