@@ -2,10 +2,14 @@
 
 This repository holds all documentation about CESSDA Metadata Validator project. 
 
-# Getting started as developer
+### Getting started as developer
 
-```
-#Generate the Maven site
+```shell
+# Pull repository and change directory
+git clone git@bitbucket.org:cessda/cessda.cmv.git
+cd cessda.cmv
+
+# Generate the Maven site
 mvn clean site docker:build
 
 # Lauch local docker env
