@@ -15,6 +15,9 @@ mvn clean site docker:build
 # Lauch local docker env
 docker-compose -f target/docker/context/docker-compose.yml up
 
+# Open your browser
+xdg-open http://localhost:80
+
 # Shutdown local docker env with
 docker-compose -f target/docker/context/docker-compose.yml down
 ```
