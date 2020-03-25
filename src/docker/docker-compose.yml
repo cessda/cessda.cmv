@@ -1,0 +1,6 @@
+version: '3'
+services:
+  cmv:
+    image: docker-private-snapshots.gesis.intra/eu.cessda.cmv/cmv:@docker.image.tag@
+    ports:
+      - 80:80
