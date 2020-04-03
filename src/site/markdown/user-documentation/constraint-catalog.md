@@ -75,36 +75,28 @@ An XPath expression must not contain predicates. This constraint is used only fo
 
 > NOTE: Work in progress, see [#9](https://bitbucket.org/cessda/cessda.cmv/issues/9)
 
+#### Definition
+
 * A field element in a metadata document uses a controlled vocabulary (CV). 
 * The metadata document is valid, only if the field element value equals one of the defined values of the given CV, otherwise invalid.
 
-```xml
-<!-- Valid metadata document snippet, because `Individual` is item of `AnalysisUnit:2.0` CV -->
-<stdyInfo>
- <sumDscr>
-  <anlyUnit xml:lang="fi">Henkil
-   <concept vocab="DDI Analysis Unit" 
-            vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0">Individual</concept>
-  </anlyUnit>
- </sumDscr>
-</stdyInfo>
-```
-
-```xml
-<!-- Invalid metadata document snippet, because `Person` is item of `AnalysisUnit:2.0` CV -->
-<stdyInfo>
- <sumDscr>
-  <anlyUnit xml:lang="fi">Henkil
-   <concept vocab="DDI Analysis Unit" 
-            vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0">Person</concept>
-  </anlyUnit>
- </sumDscr>
-</stdyInfo>
-```
-
-* Test lore ipsum
+#### Example
+* Valid metadata document snippet, because `Individual` is item of `AnalysisUnit:2.0` CV
 	```xml
-	<!-- Invalid metadata document snippet, because `Person` is item of `AnalysisUnit:2.0` CV -->
+	<!--  -->
+	<stdyInfo>
+	 <sumDscr>
+	  <anlyUnit xml:lang="fi">Henkil
+	   <concept vocab="DDI Analysis Unit" 
+	            vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0">Individual</concept>
+	  </anlyUnit>
+	 </sumDscr>
+	</stdyInfo>
+	```
+	
+* Invalid metadata document snippet, because `Person` is item of `AnalysisUnit:2.0` CV
+	```xml
+	<!--  -->
 	<stdyInfo>
 	 <sumDscr>
 	  <anlyUnit xml:lang="fi">Henkil
@@ -114,3 +106,6 @@ An XPath expression must not contain predicates. This constraint is used only fo
 	 </sumDscr>
 	</stdyInfo>
 	```
+	
+#### DDI Profile Mapping
+
