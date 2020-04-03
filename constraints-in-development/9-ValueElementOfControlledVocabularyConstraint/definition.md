@@ -4,7 +4,7 @@
 * The metadata document is valid, only if the field element equals a defined value, otherwise invalid.
 
 
-### Usage
+### Example
 
 Valid metadata document snippet, because `Individual` is item of `AnalysisUnit:2.0` CV:
 
