@@ -7,7 +7,7 @@
 ### Usage
 
 * Valid metadata document snippet, because `Individual` is item of `AnalysisUnit:2.0` CV.
-	```
+	```xml
 	<stdyInfo>
 		<sumDscr>
 			<anlyUnit xml:lang="fi">Henkilö
@@ -19,7 +19,7 @@
 	```
 	
 * Invalid metadata document snippet, because `Person` is not item of `AnalysisUnit:2.0` CV.
-	```
+	```xml
 	<stdyInfo>
 		<sumDscr>
 			<anlyUnit xml:lang="fi">Henkilö
