@@ -6,28 +6,28 @@
 
 ### Usage
 
-* Valid metadata document snippet, because `Individual` is item of `AnalysisUnit:2.0` CV:
+Valid metadata document snippet, because `Individual` is item of `AnalysisUnit:2.0` CV:
 
-	```
-	<stdyInfo>
-		<sumDscr>
-			<anlyUnit xml:lang="fi">Henkilö
-				<concept vocab="DDI Analysis Unit" 
-						vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0">Individual</concept>
-			</anlyUnit>
-		</sumDscr>
-	</stdyInfo>
-	```
+```xml
+<stdyInfo>
+	<sumDscr>
+		<anlyUnit xml:lang="fi">Henkilö
+			<concept vocab="DDI Analysis Unit" 
+					vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0">Individual</concept>
+		</anlyUnit>
+	</sumDscr>
+</stdyInfo>
+```
 	
-* Invalid metadata document snippet, because `Person` is not item of `AnalysisUnit:2.0` CV:
+Invalid metadata document snippet, because `Person` is not item of `AnalysisUnit:2.0` CV:
 
-	```
-	<stdyInfo>
-		<sumDscr>
-			<anlyUnit xml:lang="fi">Henkilö
-				<concept vocab="DDI Analysis Unit" 
-						vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0">Person</concept>
-			</anlyUnit>
-		</sumDscr>
-	</stdyInfo>
-	```
+```xml
+<stdyInfo>
+	<sumDscr>
+		<anlyUnit xml:lang="fi">Henkilö
+			<concept vocab="DDI Analysis Unit" 
+					vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0">Person</concept>
+		</anlyUnit>
+	</sumDscr>
+</stdyInfo>
+```
