@@ -1,5 +1,13 @@
 ## Constraint Catalog
 
+|                                                                    	|            Basic            	|           Standard          	| Extended 	| Strict 	|
+|--------------------------------------------------------------------	|:---------------------------:	|:---------------------------:	|:--------:	|:------:	|
+| [Mandatory Node](\#Mandatory_Node)                                 	| ![X](../images/table-x.png) 	| ![X](../images/table-x.png) 	|          	|        	|
+| [Recommended Node](\#Recommended_Node)                             	|                             	| ![X](../images/table-x.png) 	|          	|        	|
+| [Value of Controlled Vocabulary](\#Value_of_Controlled_Vocabulary) 	|                             	| ![X](../images/table-x.png) 	|          	|        	|
+| [Compilable XPath](\#Compilable_XPath)                             	|                             	|                             	|          	|        	|
+| [Predicate-less XPath](\#Predicate-less_XPath)                     	|                             	|                             	|          	|        	|
+
 ### Mandatory Node
 
 An XML node (element or attribute) described by a predicate-less XPath expression is mandatory to be used within the metadata document. 
