@@ -1,12 +1,12 @@
 ## Constraint Catalog
 
-|                                                                    	|            Basic            	|           Standard          	| Extended 	| Strict 	|
-|--------------------------------------------------------------------	|:---------------------------:	|:---------------------------:	|:--------:	|:------:	|
-| [Mandatory Node](\#Mandatory_Node)                                 	| ![X](../images/table-x.png) 	| ![X](../images/table-x.png) 	|          	|        	|
-| [Recommended Node](\#Recommended_Node)                             	|                             	| ![X](../images/table-x.png) 	|          	|        	|
-| [Value of Controlled Vocabulary](\#Value_of_Controlled_Vocabulary) 	|                             	| ![X](../images/table-x.png) 	|          	|        	|
-| [Compilable XPath](\#Compilable_XPath)                             	|                             	|                             	|          	|        	|
-| [Predicate-less XPath](\#Predicate-less_XPath)                     	|                             	|                             	|          	|        	|
+|                                                                    | Basic | Standard | Extended | Strict |
+|--------------------------------------------------------------------|:---------------------------:|:---------------------------:|:---------------------------:|:---------------------------:|
+| [Mandatory Node](\#Mandatory_Node)                                 | ![X](../images/table-x.png) | ![X](../images/table-x.png) | ![X](../images/table-x.png) | ![X](../images/table-x.png) |
+| [Recommended Node](\#Recommended_Node)                             |                             | ![X](../images/table-x.png) | ![X](../images/table-x.png) | ![X](../images/table-x.png) |
+| [Value of Controlled Vocabulary](\#Value_of_Controlled_Vocabulary) |                             | ![X](../images/table-x.png) |                             | ![X](../images/table-x.png) |
+| [Compilable XPath](\#Compilable_XPath)                             |                             |                             |                             | ![X](../images/table-x.png) |
+| [Predicate-less XPath](\#Predicate-less_XPath)                     |                             |                             |                             | ![X](../images/table-x.png) |
 
 ### Mandatory Node
 

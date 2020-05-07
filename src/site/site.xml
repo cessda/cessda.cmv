@@ -2,7 +2,7 @@
 	<skin>
 		<groupId>org.apache.maven.skins</groupId>
 		<artifactId>maven-fluido-skin</artifactId>
-		<version>1.8</version>
+		<version>1.9</version>
 	</skin>
 	<custom>
 		<fluidoSkin>
@@ -13,7 +13,6 @@
 	</custom>
 	<version position="right"/>
 	<publishDate position="right"/>
-	
 	<body>
 		<breadcrumbs>
 			<item name="CESSDA" href="https://www.cessda.eu"/>
