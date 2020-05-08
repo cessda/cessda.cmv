@@ -88,6 +88,18 @@ An XPath expression must not contain predicates. This constraint is used only fo
 * A field element in a metadata document uses a controlled vocabulary (CV). 
 * The metadata document is valid, only if the field element value equals one of the defined values of the given CV, otherwise invalid.
 
+#### Representation
+
+* CMV Profile
+	```xml
+	<cmv:Constraint ... n.n./>
+	```
+
+* DDI Profile
+	```xml
+	<pr:Used ... n.n./>
+	```
+
 #### Example
 * Valid, because *Individual* is item of *AnalysisUnit:2.0* CV
 	```xml
@@ -112,10 +124,3 @@ An XPath expression must not contain predicates. This constraint is used only fo
 	 </sumDscr>
 	</stdyInfo>
 	```
-	
-#### Profile Mapping
-
-```xml
-<pr:Used ... n.n./>
-
-```
