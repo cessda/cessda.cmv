@@ -6,9 +6,11 @@
 	</skin>
 	<custom>
 		<fluidoSkin>
-			<topBarEnabled>true</topBarEnabled>
+			<topBarEnabled>false</topBarEnabled>
+			<topBarContainerStyle>width: 60%;</topBarContainerStyle>
 			<sideBarEnabled>true</sideBarEnabled>
 			<breadcrumbDivider>/</breadcrumbDivider>
+			<sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
 		</fluidoSkin>
 	</custom>
 	<version position="right"/>
@@ -33,11 +35,13 @@
 			<item name="Coverage" href="jacoco/index.html" />
 		</menu>
 		<menu ref="reports"/>
+		<!--
 		<links>
 			<item name="CESSDA - Consortium of European Social Science Data Archives" href="https://www.cessda.eu" />
 			<item name="GESIS - Leibniz-Institute for the Social Sciences" href="https://www.gesis.org/en/home"/>
 			<item name="DDI - Data Documentation Initiative" href="https://ddialliance.org"/>
 		</links>
+		-->
 		<footer><![CDATA[<p>Copyright © 2020 <a href="https://www.cessda.eu">CESSDA ERIC</a>. All rights reserved.</p>]]></footer>
 	</body>
 	<bannerLeft>

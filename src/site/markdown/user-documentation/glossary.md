@@ -1,5 +1,9 @@
 ## Glossary
 
+#### Document
+* A document is a file containing social science metadata expressed in [DDI Lifecycle](https://ddialliance.org/explore-documentation) or [DDI Codebook](https://ddialliance.org/explore-documentation).
+* A document is the subject of validation.
+
 #### Profile
 * A profile holds a set of [constraints](\#Constraint). 
 * A profile is itself a document.
@@ -14,9 +18,5 @@
 * A [constraint](\#Constraint) is ignored if its constraint type is not part of the validation gate. 
 * CMV defines four, hierarchically structured validation gates: Basic, Standard, Extended and Strict.   
 
-#### Document
-* A document is a file containing social science metadata expressed in [DDI Lifecycle](https://ddialliance.org/explore-documentation) or [DDI Codebook](https://ddialliance.org/explore-documentation).
-* A document is the subject of validation.
-
-### Validator
+#### Validator
 * A validator is called by a validation gate to answer the question if the underlying constraint is satisfied or violated.
