@@ -7,14 +7,18 @@ pipeline {
         product_name = "cmv"
 	}
 
-	agent any
+	agent {
+        docker {
+            image 'maven:3-jdk-8'
+        }
+    }
 
 	stages {
 		// Building on master
 		stage('Build Project') {
 			steps {
 				withMaven {
-					sh "mvn clean site"
+					sh "$MVN_CMD clean site"
 				}
 			}
 			when { branch 'master' }
@@ -23,7 +27,7 @@ pipeline {
 		stage('Test Project') {
 			steps {
                 withMaven {
-                    sh 'mvn clean test'
+                    sh "$MVN_CMD clean test"
 				}
 			}
             when { not { branch 'master' } }
@@ -37,7 +41,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('cessda-sonar') {
                     withMaven {
-                        sh "mvn sonar:sonar"
+                        sh "$MVN_CMD sonar:sonar"
                     }
                 }
             }
