@@ -16,7 +16,8 @@
 #### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is mandatory to be used within the metadata document. 
-* The metadata document is valid, only if the element is present at least one, otherwise invalid.
+* This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
+* The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
 #### Representation
 
@@ -25,7 +26,7 @@
 	<pr:Used xpath="/codeBook/docDscr/citation/titlStmt/titl" isRequired="true"/>
 	```
 #### Example
-* Valid, because *titl* element is used
+* Valid, because *titl* element is present and not blank
 	```xml
 	<docDscr>
 	  <citation>
@@ -36,11 +37,22 @@
 	</docDscr>
 	```
 	
-* Invalid, because *titl* element is not used
+* Invalid, because *titl* element is not present
 	```xml
 	<docDscr>
 	  <citation>
 	    <titlStmt>
+	    </titlStmt>      
+	  </citation>
+	</docDscr>
+	```
+* Invalid, because *titl* element is blank
+	```xml
+	<docDscr>
+	  <citation>
+	    <titlStmt>
+	      <titl></titl>
+	      <!--or <titl>  </titl> -->
 	    </titlStmt>      
 	  </citation>
 	</docDscr>
@@ -51,7 +63,8 @@
 #### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is recommended to be used within the metadata document. 
-* The metadata document is valid, only if the element is present at least one, otherwise invalid.
+* This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
+* The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
 #### Representation
 
@@ -62,7 +75,7 @@
 	    <r:Content>
 	      <![CDATA[
 	        <Constraints>
-	          <RecommendedNodeContraint/>
+	          <RecommendedNodeConstraint/>
 	        <Constraints>
 	      ]]>
 	    </r:Content>
@@ -71,7 +84,7 @@
 	```
 
 #### Example
-* Valid, because *AuthEnty* element is used
+* Valid, because *AuthEnty* element is present and not blank
 	```xml
 	<stdyDscr>
 	  <citation>
@@ -82,11 +95,22 @@
 	</stdyDscr>
 	```
 
-* Valid, because *AuthEnty* element is not used
+* Invalid, because *AuthEnty* element is not present
 	```xml
 	<stdyDscr>
 	  <citation>
 	    <rspStmt/>
+	  </citation>
+	</stdyDscr>
+	```
+* Invalid, because *AuthEnty* element is blank
+	```xml
+	<stdyDscr>
+	  <citation>
+	    <rspStmt>
+	      <AuthEnty></AuthEnty>
+	      <!--or <AuthEnty>     </AuthEnty> -->
+	    </rspStmt>
 	  </citation>
 	</stdyDscr>
 	```
@@ -96,7 +120,8 @@
 #### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is optional to be used within the metadata document. 
-* The metadata document is valid, only if the element is present at least one, otherwise invalid.
+* This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
+* The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
 #### Representation
 
@@ -106,7 +131,7 @@
 	```
 
 #### Example
-* Valid, because *AuthEnty* element is used
+* Valid, because *AuthEnty* element is present and not blank
 	```xml
 	<stdyDscr>
 	  <citation>
@@ -117,7 +142,7 @@
 	</stdyDscr>
 	```
 
-* Valid, because *AuthEnty* element is not used
+* Invalid, because *AuthEnty* element is not present
 	```xml
 	<stdyDscr>
 	  <citation>
@@ -125,8 +150,17 @@
 	  </citation>
 	</stdyDscr>
 	```
-
-
+* Invalid, because *AuthEnty* element is blank
+	```xml
+	<stdyDscr>
+	  <citation>
+	    <rspStmt>
+	      <AuthEnty></AuthEnty>
+	      <!--or <AuthEnty>     </AuthEnty> -->
+	    </rspStmt>
+	  </citation>
+	</stdyDscr>
+	```
 
 
 ### Value of Controlled Vocabulary 
@@ -147,7 +181,7 @@
 	    <r:Content>
 	      <![CDATA[
 	        <Constraints>
-	          <CodeValueOfControlledVocabularyContraint/>
+	          <CodeValueOfControlledVocabularyConstraint/>
 	        <Constraints>
 	      ]]>
 	    </r:Content>
