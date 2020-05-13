@@ -51,7 +51,7 @@
 	</bannerLeft>
 	<poweredBy>
 		<logo name="CESSDA - Consortium of European Social Science Data Archives" href="https://www.cessda.eu" img="/images/logos/cessda.png" />
-		<logo name="GESIS - Leibniz-Institute for the Social Sciences" href="https://www.gesis.org/en/home" img="/images/logos/gesis.png"/>
+		<!--<logo name="GESIS - Leibniz-Institute for the Social Sciences" href="https://www.gesis.org/en/home" img="/images/logos/gesis.png"/>-->
 		<logo name="DDI - Data Documentation Initiative" href="https://ddialliance.org" img="/images/logos/ddi.png"/>
 		<logo name="Apache Maven" href="https://maven.apache.org/" img="https://maven.apache.org/images/logos/maven-feather.png"/>
 	</poweredBy>
