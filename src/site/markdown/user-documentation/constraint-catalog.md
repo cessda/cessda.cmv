@@ -182,7 +182,7 @@
 	      <![CDATA[
 	        <Constraints>
 	          <CodeValueOfControlledVocabularyConstraint/>
-	        <Constraints>
+	        </Constraints>
 	      ]]>
 	    </r:Content>
 	  </pr:Instructions>
@@ -193,10 +193,14 @@
 	      <![CDATA[
 	        <Constraints>
 	          <ControlledVocabularyRepositoryConstraint>
-                <RepositoryType>eu.cessda.cmv.core.CessdaControlledVocabularyRepository</RepositoryType>
                 <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0</RepositoryUri>
+                <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
+	          </ControlledVocabularyRepositoryConstraint>
 	          <ControlledVocabularyRepositoryConstraint>
-	        <Constraints>
+                <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/1.0</RepositoryUri>
+                <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
+	          </ControlledVocabularyRepositoryConstraint>
+	        </Constraints>
 	      ]]>
 	    </r:Content>
 	  </pr:Instructions>
@@ -204,12 +208,13 @@
 	```
 
 #### Example
-* Valid, because *Individual* is item of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+* Valid, because *Individual* is item of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0) and *TextUnit* is item of [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
 	```xml
 	<stdyInfo>
 	 <sumDscr>
 	   <anlyUnit>
 	     <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">Individual</concept>
+	     <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/1.0">TextUnit</concept>
 	   </anlyUnit>
 	 </sumDscr>
 	</stdyInfo>
