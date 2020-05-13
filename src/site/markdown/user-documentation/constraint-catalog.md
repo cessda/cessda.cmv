@@ -163,14 +163,14 @@
 	```
 
 
-### Value of Controlled Vocabulary 
+### Code Value of Controlled Vocabulary 
 
 > NOTE: Work in progress, see [#9](https://bitbucket.org/cessda/cessda.cmv/issues/9)
 
 #### Definition
 
 * A field element in a metadata document uses a controlled vocabulary (CV). 
-* The metadata document is valid, only if the field element value equals one of the defined values of the given CV, otherwise invalid.
+* The metadata document is valid, only if the field element is a codeValue of the given CV, otherwise invalid.
 
 #### Representation
 
@@ -208,7 +208,7 @@
 	```
 
 #### Example
-* Valid, because *Individual* is item of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0) and *TextUnit* is item of [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
+* Valid, because *Individual* is a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0) and *TextUnit* is a codeValue of [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
 	```xml
 	<stdyInfo>
 	 <sumDscr>
@@ -220,7 +220,7 @@
 	</stdyInfo>
 	```
 	
-* Invalid, because *Person* is **not** item of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+* Invalid, because *Person* is **not** a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
 	```xml
 	<stdyInfo>
 	 <sumDscr>
