@@ -31,6 +31,7 @@
 			<item name="Glossary" href="user-documentation/glossary.html"/>
 		</menu>
 		<menu name="Developer Documentation">
+			<item name="REST API" href="api/swagger" />
 			<item name="Java API" href="apidocs/index.html" />
 			<item name="Coverage" href="jacoco/index.html" />
 		</menu>
