@@ -55,5 +55,13 @@ pipeline {
             }
             when { branch 'master' }
         }
+		stage('Deploy Project') {
+			steps {
+				withMaven {
+					sh "$MVN_CMD jar:jar javadoc:jar source:jar deploy:deploy"
+				}
+			}
+			when { branch 'master' }
+		}
 	}
 }
