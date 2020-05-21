@@ -20,7 +20,7 @@ hr {
  text-align: center;
 }
 
-/* https://stackoverflow.com/a/15232759/3245495 */
-.table !td img {
-  text-align: center;
+.table td img {
+  display: block;
+  margin: 0 auto;
 }
