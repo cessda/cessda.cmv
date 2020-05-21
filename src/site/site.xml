@@ -22,11 +22,11 @@
 		</breadcrumbs>
 		<menu name="Overview">
 			<item name="Introduction" href="index.html"/>
-			<item name="Road Map" href="roadmap.html" />
+			<item name="Roadmap" href="roadmap.html" />
 		</menu>
 		<menu name="User Documentation">
 			<item name="Features" href="user-documentation/features.html"/>
-			<item name="Constraint Catalog" href="user-documentation/constraint-catalog.html"/>
+			<item name="Constraint Catalogue" href="user-documentation/constraint-catalogue.html"/>
 			<item name="Glossary" href="user-documentation/glossary.html"/>
 		</menu>
 		<menu name="Developer Documentation">

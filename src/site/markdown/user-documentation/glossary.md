@@ -1,5 +1,7 @@
 ### Glossary
 
+---
+
 #### Document
 * A document is a file containing social science metadata expressed in [DDI Lifecycle](https://ddialliance.org/explore-documentation) or [DDI Codebook](https://ddialliance.org/explore-documentation).
 * A document is the subject of validation.
@@ -20,3 +22,5 @@
 
 #### Validator
 * A validator is called by a validation gate to answer the question if the underlying constraint is satisfied or violated.
+
+

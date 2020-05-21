@@ -1,15 +1,19 @@
-### Constraint Catalog
+### Constraint Catalogue
+
+---
+
+* Each constraint is described by its semantic definition, xml representation and example usage. 
+* Constraints are assigned to pre-defined [validation gates](../user-documentation/glossary.html#Validation_Gate) `Basic`, `Standard`, `Extended` and `Strict` to support different levels of validation strictness.
 
 |                                                                            |            Basic            |           Standard          |           Extended          |            Strict           |
 |----------------------------------------------------------------------------|:---------------------------:|:---------------------------:|:---------------------------:|:---------------------------:|
 | [Mandatory Node](\#Mandatory_Node)                                         | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Recommended Node](\#Recommended_Node)                                     |                             | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Optional Node](\#Optional_Node)                                           |                             |                             |                             | ![X](../images/cessda/table-x.png) |
-| [CodeValue of Controlled Vocabulary](\#CodeValue_of_Controlled_Vocabulary) |                             | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Code Value of Controlled Vocabulary](\#Code_Value_of_Controlled_Vocabulary) |                             | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Maximum Node Occurrence](\#Maximum_Node_Occurrence])                      |                             |                             | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Compilable XPath](\#Compilable_XPath)                                     |                             |                             |                             |                             |
 | [Predicate-less XPath](\#Predicate-less_XPath)                             |                             |                             |                             |                             |
-
 
 ### Mandatory Node
 
@@ -165,7 +169,13 @@
 
 ### Code Value of Controlled Vocabulary 
 
-> NOTE: Work in progress, see [#9](https://bitbucket.org/cessda/cessda.cmv/issues/9)
+>
+> #### NOTE
+>
+> - Work in progress
+> - Semantics and DDI representation not stable
+> - For more information, please see [#9](https://bitbucket.org/cessda/cessda.cmv/issues/9)
+>
 
 #### Definition
 

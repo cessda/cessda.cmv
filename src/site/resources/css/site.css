@@ -3,6 +3,24 @@ body.topBarDisabled {
 }
 
 .container-fluid {
- padding-right:400px;
- padding-left:400px;
+  padding-right:15%;
+  padding-left:15%;
+}
+
+hr {
+  margin: 0 0 30px 0;
+}
+
+.table {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.table thead th {
+ text-align: center;
+}
+
+/* https://stackoverflow.com/a/15232759/3245495 */
+.table !td img {
+  text-align: center;
 }

@@ -1,5 +1,7 @@
 ### Roadmap
 
+---
+
 #### Version v0.3.0
 
 * Deadline
@@ -31,7 +33,7 @@
     * Start Java component `cmv.server`
 * Deliverables
     * Released code repositories `cmv`, `cmv.core` and `cmv.server`
-    * Component `cmv` online available with constraint catalog as specification
+    * Component `cmv` online available with constraint catalogue as specification
     * Profiles with structured ddi extension
     * Constraint set with n<10
     * Usable Java components `cmv.core` and `cmv.server`
@@ -55,3 +57,4 @@
     * Diagrams to visualize OOA and OOD concepts
     * Constraint set with n=1
     * Usable Java component `cmv.core`
+
