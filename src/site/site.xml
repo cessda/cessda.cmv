@@ -7,8 +7,8 @@
 	<custom>
 		<fluidoSkin>
 			<topBarEnabled>false</topBarEnabled>
-			<topBarContainerStyle>width: 60%;</topBarContainerStyle>
 			<sideBarEnabled>true</sideBarEnabled>
+			<topBarContainerStyle>width: 60%;</topBarContainerStyle>
 			<breadcrumbDivider>/</breadcrumbDivider>
 			<sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
 		</fluidoSkin>
@@ -22,7 +22,6 @@
 		</breadcrumbs>
 		<menu name="Overview">
 			<item name="Introduction" href="index.html"/>
-			<!-- <item name="Release Notes" href="release-notes.html" />  -->
 			<item name="Road Map" href="roadmap.html" />
 		</menu>
 		<menu name="User Documentation">
@@ -33,7 +32,6 @@
 		<menu name="Developer Documentation">
 			<item name="REST API" href="api/swagger" />
 			<item name="Java API" href="apidocs/index.html" />
-			<item name="Coverage" href="jacoco/index.html" />
 		</menu>
 		<menu ref="reports"/>
 		<!--
@@ -48,8 +46,11 @@
 	<bannerLeft>
 		<name>eu.cessda.cmv</name>
 		<src>/images/logos/cessda-mv.png</src>
-		<href>https://bitbucket.org/cessda/cessda.cmv.core</href>
+		<href>https://bitbucket.org/cessda/workspace/projects/CMV</href>
 	</bannerLeft>
+	<bannerRight>
+		<src>/images/cessda/background.png</src>
+	</bannerRight>
 	<poweredBy>
 		<logo name="CESSDA - Consortium of European Social Science Data Archives" href="https://www.cessda.eu" img="/images/logos/cessda.png" />
 		<!--<logo name="GESIS - Leibniz-Institute for the Social Sciences" href="https://www.gesis.org/en/home" img="/images/logos/gesis.png"/>-->

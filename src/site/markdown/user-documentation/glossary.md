@@ -1,4 +1,4 @@
-## Glossary
+### Glossary
 
 #### Document
 * A document is a file containing social science metadata expressed in [DDI Lifecycle](https://ddialliance.org/explore-documentation) or [DDI Codebook](https://ddialliance.org/explore-documentation).

@@ -1,12 +1,12 @@
-## Constraint Catalog
+### Constraint Catalog
 
 |                                                                            |            Basic            |           Standard          |           Extended          |            Strict           |
 |----------------------------------------------------------------------------|:---------------------------:|:---------------------------:|:---------------------------:|:---------------------------:|
-| [Mandatory Node](\#Mandatory_Node)                                         | ![X](../images/table-x.png) | ![X](../images/table-x.png) | ![X](../images/table-x.png) | ![X](../images/table-x.png) |
-| [Recommended Node](\#Recommended_Node)                                     |                             | ![X](../images/table-x.png) | ![X](../images/table-x.png) | ![X](../images/table-x.png) |
-| [Optional Node](\#Optional_Node)                                           |                             |                             |                             | ![X](../images/table-x.png) |
-| [CodeValue of Controlled Vocabulary](\#CodeValue_of_Controlled_Vocabulary) |                             | ![X](../images/table-x.png) | ![X](../images/table-x.png) | ![X](../images/table-x.png) |
-| [Maximum Node Occurrence](\#Maximum_Node_Occurrence])                      |                             |                             | ![X](../images/table-x.png) | ![X](../images/table-x.png) |
+| [Mandatory Node](\#Mandatory_Node)                                         | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Recommended Node](\#Recommended_Node)                                     |                             | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Optional Node](\#Optional_Node)                                           |                             |                             |                             | ![X](../images/cessda/table-x.png) |
+| [CodeValue of Controlled Vocabulary](\#CodeValue_of_Controlled_Vocabulary) |                             | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Maximum Node Occurrence](\#Maximum_Node_Occurrence])                      |                             |                             | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Compilable XPath](\#Compilable_XPath)                                     |                             |                             |                             |                             |
 | [Predicate-less XPath](\#Predicate-less_XPath)                             |                             |                             |                             |                             |
 
