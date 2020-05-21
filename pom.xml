@@ -133,6 +133,11 @@
 								<dockerFile>${project.basedir}/src/docker/Dockerfile</dockerFile>
 								<contextDir>${project.basedir}/target/docker/context</contextDir>
 							</build>
+							<run>
+								<ports>
+									<port>80:80</port>
+								</ports>
+							</run>
 						</image>
 					</images>
 				</configuration>
