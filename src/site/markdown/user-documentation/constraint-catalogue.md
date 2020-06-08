@@ -80,7 +80,7 @@
 	      <![CDATA[
 	        <Constraints>
 	          <RecommendedNodeConstraint/>
-	        <Constraints>
+	        </Constraints>
 	      ]]>
 	    </r:Content>
 	  </pr:Instructions>
