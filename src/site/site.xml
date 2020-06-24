@@ -28,6 +28,7 @@
 			<item name="Features" href="user-documentation/features.html"/>
 			<item name="Constraint Catalogue" href="user-documentation/constraint-catalogue.html"/>
 			<item name="Glossary" href="user-documentation/glossary.html"/>
+			<item name="How to use Swagger UI" href="user-documentation/how-to-use-swagger-ui.html"/>
 		</menu>
 		<menu name="Developer Documentation">
 			<item name="REST API" href="api/swagger" />

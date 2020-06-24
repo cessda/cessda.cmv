@@ -7,6 +7,10 @@ body.topBarDisabled {
   padding-left:15%;
 }
 
+h4 {
+  margin: 40px 0 10px;
+}
+
 hr {
   margin: 0 0 30px 0;
 }
