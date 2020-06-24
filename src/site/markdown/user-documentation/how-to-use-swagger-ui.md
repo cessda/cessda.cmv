@@ -3,7 +3,7 @@
 ---
 
 #### Step 1 
-* Click on [REST API](file:///home/alex/ws/20190901/cessda.cmv/target/site/api/swagger)
+* Click on [REST API](../api/swagger)
 
 ![Step 1](../images/uml/swagger-tutorial-01.png)
 
