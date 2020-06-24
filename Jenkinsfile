@@ -63,5 +63,11 @@ pipeline {
 			}
 			when { branch 'master' }
 		}
+        stage("Run Downstream Jobs") {
+            steps {
+                build job: 'cessda.cmv.server/master', wait: false
+            }
+            when { branch 'master' }
+        }
 	}
 }
