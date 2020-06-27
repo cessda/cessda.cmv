@@ -47,7 +47,7 @@
 	<bannerLeft>
 		<name>eu.cessda.cmv</name>
 		<src>/images/logos/cessda-mv.png</src>
-		<href>https://bitbucket.org/cessda/workspace/projects/CMV</href>
+		<href>https://cmv-dev.cessda.eu</href>
 	</bannerLeft>
 	<bannerRight>
 		<src>/images/cessda/background.png</src>
