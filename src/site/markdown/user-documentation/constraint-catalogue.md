@@ -207,7 +207,14 @@
 	  </citation>
 	</stdyDscr>
 	```
-
+* Valid, because *IDNo* parent element is not present
+	```xml
+	<stdyDscr>
+	  <citation>
+	    <titlStmt/>
+	  </citation>
+	</stdyDscr>
+	```
 * Invalid, because *agency* element is not present
 	```xml
 	<stdyDscr>
