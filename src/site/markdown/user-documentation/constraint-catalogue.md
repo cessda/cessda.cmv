@@ -170,6 +170,64 @@
 	</stdyDscr>
 	```
 
+### Mandatory Node if Parent Present
+
+#### Definition
+
+* A node may only be mandatory if the parent node is present.
+* The metadata document is valid, only if - provided the parent node is present - the node itself is present at least once and is not blank, otherwise invalid.
+* This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
+
+#### Representation
+
+* DDI Profile
+	```xml
+	<pr:Used xpath="/codeBook/stdyDscr/citation/titlStmt/IDNo" isRequired="false"/>
+	<pr:Used xpath="/codeBook/stdyDscr/citation/titlStmt/IDNo/@agency" isRequired="false">
+	  <pr:Instructions>
+	    <r:Content>
+	      <![CDATA[
+	        <Constraints>
+	          <MandatoryNodeIfParentPresentConstraint/>
+	        </Constraints>
+	      ]]>
+	    </r:Content>
+	  </pr:Instructions>
+	</pr:Used>
+	```
+
+#### Example
+* Valid, because *agency* element is present and not blank
+	```xml
+	<stdyDscr>
+	  <citation>
+	    <titlStmt>
+	      <IDNo agency="GESIS">ZA2800</IDNo>
+	    </titlStmt>
+	  </citation>
+	</stdyDscr>
+	```
+
+* Invalid, because *agency* element is not present
+	```xml
+	<stdyDscr>
+	  <citation>
+	    <titlStmt>
+	       <IDNo>ZA2800</IDNo>
+	    </titlStmt>
+	  </citation>
+	</stdyDscr>
+	```
+* Invalid, because *agency* element is blank
+	```xml
+	<stdyDscr>
+	  <citation>
+	    <titlStmt>
+		  <IDNo agency="">ZA2800</IDNo>
+	    </titlStmt>
+	  </citation>
+	</stdyDscr>
+	```
 
 ### Code Value of Controlled Vocabulary 
 
