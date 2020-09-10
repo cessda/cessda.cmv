@@ -238,14 +238,6 @@
 
 ### Code Value of Controlled Vocabulary 
 
->
-> #### NOTE
->
-> - Work in progress
-> - Semantics and DDI representation not stable
-> - For more information, please see [#9](https://bitbucket.org/cessda/cessda.cmv/issues/9)
->
-
 #### Definition
 
 * A field element in a metadata document uses a controlled vocabulary (CV). 
@@ -306,6 +298,67 @@
 	   <anlyUnit>
 	     <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">Person</concept>
 	   </anlyUnit>
+	 </sumDscr>
+	</stdyInfo>
+	```
+
+### Descriptive Term of Controlled Vocabulary
+
+#### Definition
+
+* A field element in a metadata document uses a controlled vocabulary (CV).
+* The metadata document is valid, only if the field element is a descriptive term of the given CV, otherwise invalid.
+
+#### Representation
+
+* DDI Profile
+	```xml
+	<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit">
+	  <pr:Instructions>
+	    <r:Content>
+	      <![CDATA[
+	        <Constraints>
+	          <DescriptiveTermOfControlledVocabularyConstraint/>
+	        </Constraints>
+	      ]]>
+	    </r:Content>
+	  </pr:Instructions>
+	</pr:Used>
+	<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept/@vocabURI">
+	  <pr:Instructions>
+	    <r:Content>
+	      <![CDATA[
+	        <Constraints>
+	          <ControlledVocabularyRepositoryConstraint>
+                <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0</RepositoryUri>
+                <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
+	          </ControlledVocabularyRepositoryConstraint>
+	        </Constraints>
+	      ]]>
+	    </r:Content>
+	  </pr:Instructions>
+	</pr:Used>
+	```
+
+#### Example
+* Valid, because *Media unit: Sound* is a descriptive term of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+	```xml
+	<stdyInfo>
+	 <sumDscr>
+	  <anlyUnit xml:lang="en">Media unit: Sound
+	   <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">MediaUnit.Sound</concept>
+	  </anlyUnit>
+	 </sumDscr>
+	</stdyInfo>
+	```
+
+* Invalid, because *Sound media unit* is **not** a descriptive term of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+	```xml
+	<stdyInfo>
+	 <sumDscr>
+	  <anlyUnit xml:lang="en">Sound media unit
+	   <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">MediaUnit.Sound</concept>
+	  </anlyUnit>
 	 </sumDscr>
 	</stdyInfo>
 	```
