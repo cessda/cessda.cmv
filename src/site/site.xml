@@ -31,7 +31,7 @@
 			<item name="How to use Swagger UI" href="user-documentation/how-to-use-swagger-ui.html"/>
 		</menu>
 		<menu name="Developer Documentation">
-			<item name="REST API" href="api/swagger" />
+			<item name="REST API" href="../api/swagger" />
 			<item name="Java API" href="apidocs/index.html" />
 		</menu>
 		<menu ref="reports"/>
