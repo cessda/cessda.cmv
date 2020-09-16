@@ -123,6 +123,40 @@
 	</stdyDscr>
 	```
 
+### Fixed Value Node
+
+#### Definition
+
+* The metadata document is valid, only if the node value equals to the fixed value defined in the profile, otherwise invalid.
+
+#### Representation
+
+* DDI Profile
+	```xml
+    <pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept/@vocab"
+             defaultValue="DDI Analysis Unit"
+             fixedValue="true">
+    </pr:Used>
+	```
+#### Example
+* Valid, because *vocab* attribute value equals to "DDI Analysis Unit"
+	```xml
+    <sumDscr>
+      <anlyUnit>
+        <concept vocab="DDI Analysis Unit" />
+      </anlyUnit>
+    </sumDscr>
+	```
+
+* Invalid, because *vocab* attribute value does not equal to "DDI Analysis Unit"
+	```xml
+    <sumDscr>
+      <anlyUnit>
+        <concept vocab="DDI Analyseeinheit" />
+      </anlyUnit>
+    </sumDscr>
+	```
+
 ### Optional Node
 
 #### Definition
