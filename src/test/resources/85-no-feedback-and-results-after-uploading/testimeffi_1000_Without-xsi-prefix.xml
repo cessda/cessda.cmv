@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns="ddi:codebook:2_5" version="2.5" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+  <docDscr>
+    <citation>
+      <titlStmt><titl/></titlStmt>
+      <prodStmt>
+        <producer xml:lang="fi" abbr="FSD">Yhteiskuntatieteellinen tietoarkisto</producer><producer xml:lang="en" abbr="FSD">Finnish Social Science Data Archive</producer>
+        <copyright xml:lang="fi">Yhteiskuntatieteellinen tietoarkisto</copyright><copyright xml:lang="en">Finnish Social Science Data Archive</copyright>
+      </prodStmt>
+      <holdings xml:lang="fi" URI="http://urn.fi/urn:nbn:fi:fsd:T-FSD1000" location="Yhteiskuntatieteellinen tietoarkisto FSD"/><holdings xml:lang="en" URI="http://urn.fi/urn:nbn:fi:fsd:T-FSD1000" location="Finnish Social Science Data Archive FSD"/>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl xml:lang="en">Finnish Voter Barometer 1973</titl>
+        <parTitl xml:lang="en">Finnish Voter Barometer 1973</parTitl><parTitl xml:lang="fi">Puolueiden ajankohtaistutkimus 1973</parTitl>
+        <IDNo xml:lang="fi" agency="FSD">FSD1000</IDNo><IDNo xml:lang="fi" agency="Kansalliskirjasto">urn:nbn:fi:fsd:T-FSD1000</IDNo><IDNo xml:lang="en" agency="FSD">FSD1000</IDNo><IDNo xml:lang="en" agency="The National Library of Finland">urn:nbn:fi:fsd:T-FSD1000</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty xml:lang="fi">Suomen Gallup</AuthEnty><AuthEnty xml:lang="fi">Helsingin yliopisto. Yleisen valtio-opin laitos</AuthEnty><AuthEnty xml:lang="en">Gallup Finland</AuthEnty><AuthEnty xml:lang="en">University of Helsinki. Department of Political Science</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <copyright xml:lang="fi">Tietoarkiston ja aineiston luovuttajan tekemän sopimuksen mukaisesti.</copyright><copyright xml:lang="en">In accordance with the agreement between FSD and the depositor.</copyright>
+        <prodDate xml:lang="fi">1973</prodDate><prodDate xml:lang="en">1973</prodDate>
+      </prodStmt>
+      <distStmt>
+        <distrbtr abbr="FSD" URI="https://www.fsd.tuni.fi/" xml:lang="fi">Yhteiskuntatieteellinen tietoarkisto</distrbtr><distrbtr abbr="FSD" URI="https://www.fsd.tuni.fi/" xml:lang="en">Finnish Social Science Data Archive</distrbtr>
+        <distDate xml:lang="fi" date="1999-09-03"/><distDate xml:lang="en" date="2002-03-22"/>
+      </distStmt>
+      <serStmt URI="https://services.fsd.uta.fi/catalogue/series/6?lang=fi" xml:lang="fi" ID="pajank">
+        <serName xml:lang="fi">Puolueiden ajankohtaistutkimukset</serName>
+        <serInfo xml:lang="fi">Puolueiden ajankohtaistutkimukset kuuluvat nk. puolueiden yhteistutkimusten sarjaan. Puolueiden yhteistutkimusten toimeksiantajina ovat olleet suurimmat eduskuntapuolueet ja vaalivuosina tutkimuksilla on ollut myös muita rahoittajia. Tutkimuksien suunnittelijoina olivat vuoteen 1988 saakka Suomen Gallup (TNS Gallup) ja Helsingin yliopiston yleisen valtio-opin laitos (nykyisin politiikan ja talouden tutkimuksen laitos) yhteistyössä puolueiden kanssa. Tämän jälkeen tutkimusten suunnittelusta on vastannut Suomen Gallup yhdessä aineistonkeruuta rahoittaneiden puolueiden kanssa. Vuosina 1973-1990 ajankohtaistutkimuksia on tehty käyntikyselyinä vuosittain lukuun ottamatta vuosia 1985 ja 1989. Aineistot on koottu pääosin strukturoidulla kyselylomakkeella, 1000-2000 haastattelua/tutkimus. Vuodesta 1991 alkaen tutkimukset on tehty GallupKanavalla kotitalouksiin asennetuin mikrotietokonein ja Internet-päättein. Kaikissa tutkimuksissa on selvitetty väestön äänestyskäyttäytymistä, huolenaiheita, mielipiteitä hallituksesta ja puolueista sekä suhtautumista valtakunnallisiin poliittisiin kysymyksiin. Usein on tiedusteltu myös taloudellista tilannetta koskevia odotuksia, puheenjohtajan merkitystä puolueelle, vastaajan osallistumista poliittiseen toimintaan ja mielipiteitä kunnallispolitiikasta. Taustatietoina on kysytty yleensä vastaajan ja perheen päähenkilön sosiaaliryhmää, päähenkilön elinkeinoa, vastaajan koulutusta, ikää, äidinkieltä, sukupuolta, jäsenyyttä puoluejärjestöissä, puoluekantaa, jäsenyyttä työmarkkinajärjestöissä ja perheen vuosituloja. Lisäksi aineistot sisältävät alueellisia muuttujia. Aineistosarja mahdollistaa lukuisia aikavertailuja, joskaan muuttujat eivät ole aina täysin vertailukelpoisia. Tietoarkistoon on arkistoitu aineistoja vuodesta 1973.</serInfo>
+      </serStmt><serStmt URI="https://services.fsd.uta.fi/catalogue/series/6?lang=en" xml:lang="en">
+        <serName xml:lang="en">Finnish Voter Barometers</serName>
+        <serInfo xml:lang="en">The Finnish Voter Barometer surveys are commissioned by the major parties in the Parliament. In election years, other sponsors have also been involved. Up till 1988, the surveys were planned by Gallup Finland (TNS Gallup Ltd) and the Department of Political and Economic Studies at the University of Helsinki, in collaboration with the political parties. After 1988, the planning has been in the hands of Gallup Finland and the parties. From 1973 to 1990, the annual voter barometers were collected mainly with face-to-face interviews using structured questionnaires, 1000-2000 interviews/barometer. Since 1991, the data have been collected with GallupChannel (PC's installed in respondents' homes). No surveys were conducted in 1985 and 1989. Survey themes include voting behaviour, opinions on the government and the parties, and attitudes towards national political issues. In addition, respondents' economic expectations and political participation have often been studied, as well as their opinions on local politics, and the significance of the party leader to a party. Background variables have often included the social class of the respondent and the household head, economic activity of the household head, respondent's education, age, mother tongue, gender, party membership, political views, trade union membership, and family's annual income. There are also regional variables. Even though the variables are not always fully comparable from one survey to another, all kinds of comparisons over time are possible. The FSD collections cover data from 1973.</serInfo>
+      </serStmt>
+      <verStmt>
+        <version date="2018-07-12" xml:lang="fi"/><version date="2018-07-12" xml:lang="en"/>
+      </verStmt>
+    </citation>
+    <citation>
+      <titlStmt>
+        <titl xml:lang="fi">Puolueiden ajankohtaistutkimus 1973</titl>
+      </titlStmt>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <keyword xml:lang="fi" vocab="YSA" vocabURI="http://vesa.lib.helsinki.fi/" ID="vaalit">vaalit</keyword><keyword xml:lang="fi" vocab="YSA" vocabURI="http://vesa.lib.helsinki.fi/" ID="eduskuntavaalit">eduskuntavaalit</keyword><keyword xml:lang="fi" vocab="YSA" vocabURI="http://vesa.lib.helsinki.fi/" ID="kunnallisvaalit">kunnallisvaalit</keyword><keyword xml:lang="fi" vocab="YSA" vocabURI="http://vesa.lib.helsinki.fi/" ID="aeaenestaeminen">äänestäminen</keyword><keyword xml:lang="fi" vocab="YSA" vocabURI="http://vesa.lib.helsinki.fi/" ID="poliittinen_kaeyttaeytyminen">poliittinen käyttäytyminen</keyword><keyword xml:lang="fi" vocab="YSA" vocabURI="http://vesa.lib.helsinki.fi/" ID="poliittiset_asenteet">poliittiset asenteet</keyword><keyword xml:lang="fi" vocab="YSA" vocabURI="http://vesa.lib.helsinki.fi/" ID="puolueiden_kannatus">puolueiden kannatus</keyword><keyword xml:lang="en" vocab="ELSST" ID="Finland">Finland</keyword><keyword xml:lang="en" vocab="ELSST" ID="elections">elections</keyword><keyword xml:lang="en" vocab="ELSST" ID="parliamentary_elections">parliamentary elections</keyword><keyword xml:lang="en" vocab="ELSST" ID="local_government_elections">local government elections</keyword><keyword xml:lang="en" vocab="ELSST" ID="voting">voting</keyword><keyword xml:lang="en" vocab="ELSST" ID="political_behaviour">political behaviour</keyword><keyword xml:lang="en" vocab="ELSST" ID="political_attitudes">political attitudes</keyword>
+        <topcClas xml:lang="fi" vocab="OKM" vocabURI="http://www.yso.fi/onto/okm-tieteenala/conceptscheme" ID="Yhteiskuntatieteet">Yhteiskuntatieteet</topcClas><topcClas xml:lang="fi" vocab="CESSDA Topic Classification" ID="Poliittinen_kaeyttaeytyminen_poliittiset_asenteet_ja_mielipiteet">Poliittinen käyttäytyminen, poliittiset asenteet ja mielipiteet</topcClas><topcClas xml:lang="en" vocab="OKM" vocabURI="http://www.yso.fi/onto/okm-tieteenala/conceptscheme" ID="Social_sciences">Social sciences</topcClas><topcClas xml:lang="en" vocab="CESSDA Topic Classification" ID="Political_behaviour_and_attitudes">Political behaviour and attitudes</topcClas>
+      </subject>
+      <abstract xml:lang="fi">Aineiston muuttujat kuvaavat seuraavia asioita: puolueiden imagot, puoluejäsenyys, kiinnostuneisuus politiikasta, järjestöjen jäsenyys, äänestäminen vuoden 1972 eduskunta- ja kunnallisvaaleissa, äänestysvarmuus, mielipiteet verotuksesta, valtion osuudesta talouselämästä ja EEC:stä, päätöksentekoon vaikuttaminen, käsitykset Suomen maataloudesta ja valtion määrärahojen myöntämisestä, haastattelutilanteeseen liittyvät muuttujat, näytteen sosiaalinen rakenne.</abstract><abstract xml:lang="en">The survey studied Finnish perceptions of political parties, party membership, interest in politics, membership in various organisations, voting in the 1972 parliamentary and municipal elections, voting certainty, opinions about taxation, the government's role in the Finnish economy, the EEC, etc. Other topics included influence in decision making, perceptions of Finnish agriculture, and state grants. Background variables included which party R would vote for if the parliamentary elections were held at that time, number and age of household members, housing tenure and type of accomodation, R's economic activity, occupational status, basic education, vocational education, gender, age group, place of residence, electoral district, and annual gross income of the household.</abstract>
+      <sumDscr>
+        <collDate xml:lang="fi" date="1973-09-09" event="start"/><collDate xml:lang="fi" date="1973-10-17" event="end"/><collDate xml:lang="en" date="1973-09-09" event="start"/><collDate xml:lang="en" date="1973-10-17" event="end"/>
+        <nation xml:lang="fi" abbr="FI">Suomi</nation><nation xml:lang="en" abbr="FI">Finland</nation>
+        <geogCover xml:lang="fi">Suomi</geogCover><geogCover xml:lang="en">Finland</geogCover>
+        <anlyUnit xml:lang="fi">Henkilö<concept>Individual</concept></anlyUnit><anlyUnit xml:lang="en">Individual<concept>Individual</concept></anlyUnit>
+        <universe xml:lang="fi" clusion="I">Suomen 18 vuotta täyttänyt väestö</universe><universe xml:lang="fi" clusion="E">Ahvenanmaa</universe><universe xml:lang="en" clusion="I">Finnish population aged 18 or over</universe><universe xml:lang="en" clusion="E">the Åland Islands</universe>
+        <dataKind xml:lang="fi">Kvantitatiivinen</dataKind><dataKind xml:lang="en">Quantitative</dataKind>
+      </sumDscr>
+    </stdyInfo>
+    <method>
+      <dataColl>
+        <timeMeth xml:lang="fi">Pitkittäisaineisto: trendi/toistuva poikkileikkausaineisto<concept>Longitudinal.TrendRepeatedCrossSection</concept></timeMeth><timeMeth xml:lang="en">Longitudinal: Trend/Repeated cross-section<concept>Longitudinal.TrendRepeatedCrossSection</concept></timeMeth>
+        <collMode xml:lang="fi">Kasvokkainen haastattelu<concept/></collMode><collMode xml:lang="en">Face-to-face interview<concept/></collMode>
+      </dataColl>
+    </method>
+    <dataAccs>
+      <useStmt>
+        <restrctn xml:lang="fi">Aineisto on käytettävissä (B) tutkimukseen, opetukseen ja opiskeluun.</restrctn><restrctn xml:lang="en">The dataset is (B) available for research, teaching and study.</restrctn>
+        <citReq xml:lang="fi">Aineistoon ja sen tekijöihin tulee viitata asianmukaisesti kaikissa julkaisuissa ja esityksissä, joissa aineistoa käytetään. Tietoarkiston antaman malliviittaustiedon voi merkitä lähdeluetteloon sellaisenaan tai sitä voi muokata julkaisun käytäntöjen mukaisesti.</citReq><citReq xml:lang="en">The data and its creators shall be cited in all publications and presentations for which the data have been used. The bibliographic citation may be in the form suggested by the archive or in the form required by the publication.</citReq>
+        <deposReq xml:lang="fi">Tietoarkistoon on lähetettävä viitetiedot kaikista julkaisuista, joissa käyttäjä hyödyntää aineistoa.</deposReq><deposReq xml:lang="en">The user shall notify the archive of all publications where she or he has used the data.</deposReq>
+      </useStmt>
+    </dataAccs>
+    <othrStdyMat>
+      <relPubl xml:lang="fi">
+        Quinlan, Stephen (2012). The Conundrum of Youth Turnout. A Cross-national Examination of Generational Processes. Dublin, IE: University College Dublin, IE. Doctoral Dissertation.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="fi"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="fi"/>
+          </distStmt>
+          <holdings xml:lang="fi"/>
+        </citation>
+      </relPubl><relPubl xml:lang="en">
+        Wass, Hanna (2007). The effects of age, generation and period on turnout in Finland 1975-2003. Electoral Studies 26(3), 648-659.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="en"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="en"/>
+          </distStmt>
+          <holdings xml:lang="en"/>
+        </citation>
+      </relPubl><relPubl xml:lang="fi">
+        Wass, Hanna (2007). The effects of age, generation and period on turnout in Finland 1975-2003. Electoral Studies 26(3), 648-659.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="fi"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="fi"/>
+          </distStmt>
+          <holdings xml:lang="fi"/>
+        </citation>
+      </relPubl><relPubl xml:lang="fi">
+        Heinonen, Marja &amp; Laaninen, Riikka &amp; Paju, Reijo &amp; Rapeli, Lauri (2013). Kyselytutkimuksen edustavuus Suomessa 1973-2011. Katsaus keskeisistä taustatekijöistä. Politiikka: Valtiotieteellisen yhdistyksen julkaisu 55 (2013):3, s. 192-199.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="fi"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="fi"/>
+          </distStmt>
+          <holdings xml:lang="fi"/>
+        </citation>
+      </relPubl><relPubl xml:lang="en">
+        Quinlan, Stephen (2012). The Conundrum of Youth Turnout. A Cross-national Examination of Generational Processes. Dublin, IE: University College Dublin, IE. Doctoral Dissertation.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="en"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="en"/>
+          </distStmt>
+          <holdings xml:lang="en"/>
+        </citation>
+      </relPubl><relPubl xml:lang="en">
+        Wass, Hanna (2008). Generations and turnout: Generational effect in electoral participation in Finland. Helsinki: University of Helsinki. Department of Political Science. Acta Politica 35.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="en"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="en"/>
+          </distStmt>
+          <holdings xml:lang="en"/>
+        </citation>
+      </relPubl><relPubl xml:lang="fi">
+        Paloheimo, Heikki (2005). Vaalit ja demokratia Suomessa. Helsinki: WSOY.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="fi"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="fi"/>
+          </distStmt>
+          <holdings xml:lang="fi"/>
+        </citation>
+      </relPubl><relPubl xml:lang="fi">
+        Paloheimo, Heikki (2005). Puoluevalinnan tilannetekijät. Teoksessa: Vaalit ja demokratia Suomessa (toim. Heikki Paloheimo), 202-228. Helsinki: WSOY.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="fi"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="fi"/>
+          </distStmt>
+          <holdings xml:lang="fi"/>
+        </citation>
+      </relPubl><relPubl xml:lang="en">
+        Heinonen, Marja &amp; Laaninen, Riikka &amp; Paju, Reijo &amp; Rapeli, Lauri (2013). Kyselytutkimuksen edustavuus Suomessa 1973-2011. Katsaus keskeisistä taustatekijöistä. Politiikka: Valtiotieteellisen yhdistyksen julkaisu 55 (2013):3, s. 192-199.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="en"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="en"/>
+          </distStmt>
+          <holdings xml:lang="en"/>
+        </citation>
+      </relPubl><relPubl xml:lang="en">
+        Paloheimo, Heikki (2005). Vaalit ja demokratia Suomessa. Helsinki: WSOY.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="en"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="en"/>
+          </distStmt>
+          <holdings xml:lang="en"/>
+        </citation>
+      </relPubl><relPubl xml:lang="fi">
+        Grönlund, Kimmo &amp; Paloheimo, Heikki &amp; Wass, Hanna (2005). Äänestysosallistuminen. Teoksessa: Vaalit ja demokratia Suomessa (toim. Heikki Paloheimo), 119-146. Helsinki: WSOY.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="fi"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="fi"/>
+          </distStmt>
+          <holdings xml:lang="fi"/>
+        </citation>
+      </relPubl><relPubl xml:lang="en">
+        Grönlund, Kimmo &amp; Paloheimo, Heikki &amp; Wass, Hanna (2005). Äänestysosallistuminen. Teoksessa: Vaalit ja demokratia Suomessa (toim. Heikki Paloheimo), 119-146. Helsinki: WSOY.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="en"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="en"/>
+          </distStmt>
+          <holdings xml:lang="en"/>
+        </citation>
+      </relPubl><relPubl xml:lang="fi">
+        Wass, Hanna (2008). Generations and turnout: Generational effect in electoral participation in Finland. Helsinki: University of Helsinki. Department of Political Science. Acta Politica 35.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="fi"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="fi"/>
+          </distStmt>
+          <holdings xml:lang="fi"/>
+        </citation>
+      </relPubl><relPubl xml:lang="en">
+        Paloheimo, Heikki (2005). Puoluevalinnan tilannetekijät. Teoksessa: Vaalit ja demokratia Suomessa (toim. Heikki Paloheimo), 202-228. Helsinki: WSOY.
+        <citation>
+          <titlStmt>
+            <titl xml:lang="en"/>
+          </titlStmt>
+          <distStmt>
+            <distDate xml:lang="en"/>
+          </distStmt>
+          <holdings xml:lang="en"/>
+        </citation>
+      </relPubl>
+    </othrStdyMat>
+  </stdyDscr>
+</codeBook>
