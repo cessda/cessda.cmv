@@ -42,7 +42,7 @@
 			<item name="DDI - Data Documentation Initiative" href="https://ddialliance.org"/>
 		</links>
 		-->
-		<footer><![CDATA[<p>Copyright © 2020 <a href="https://www.cessda.eu">CESSDA ERIC</a>. All rights reserved.</p>]]></footer>
+		<footer><![CDATA[<p>© Copyright 2020, <a href="https://www.cessda.eu">CESSDA ERIC</a></p>]]></footer>
 	</body>
 	<bannerLeft>
 		<name>eu.cessda.cmv</name>
