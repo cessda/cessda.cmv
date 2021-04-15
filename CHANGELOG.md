@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 *- Fixed (for any bug fixes)*  
 *- Security (in case of vulnerabilities)*
 
+## [0.4.1] - 2021-04-15
+
+### Changed
+- Update `cmv-core` to 0.4.1
+
 ## [0.4.0] - 2021-04-12
 
 ### Deprectated
@@ -20,4 +25,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - By CESSDA requested repairs (#110)
 
+[0.4.1]: https://bitbucket.org/cessda/cessda.cmv/src/v0.4.1
 [0.4.0]: https://bitbucket.org/cessda/cessda.cmv/src/v0.4.0
