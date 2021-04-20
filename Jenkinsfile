@@ -50,13 +50,8 @@ pipeline {
                                 sh "$MVN_CMD sonar:sonar"
                             }
                         }
-                    }
-                    when { branch 'master' }
-                }
-                stage("Get Sonar Quality Gate") {
-                    steps {
                         timeout(time: 1, unit: 'HOURS') {
-                            waitForQualityGate abortPipeline: false
+                            waitForQualityGate abortPipeline: true
                         }
                     }
                     when { branch 'master' }
