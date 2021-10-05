@@ -6,7 +6,7 @@
 
 	<groupId>eu.cessda.cmv</groupId>
 	<artifactId>cmv</artifactId>
-	<version>0.4.2-SNAPSHOT</version>
+	<version>0.4.2</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>eu.cessda.cmv</groupId>
 			<artifactId>cmv-core</artifactId>
-			<version>0.4.2-SNAPSHOT</version>
+			<version>0.4.2</version>
 		</dependency>
 	</dependencies>
 
