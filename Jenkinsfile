@@ -4,7 +4,7 @@ pipeline {
     }
 
     environment {
-        product_name = "cmv"
+        product_name = 'cmv'
 	}
 
 	agent {
@@ -15,7 +15,7 @@ pipeline {
         stage('Pull SDK Docker Image') {
             agent {
                 docker {
-                    image 'maven:3-jdk-8'
+                    image 'openjdk:8'
                     reuseNode true
                 }
             }
@@ -24,7 +24,7 @@ pipeline {
                 stage('Build Project') {
                     steps {
                         withMaven {
-                            sh "$MVN_CMD clean site"
+                            sh './mvnw clean site'
                         }
                     }
                     when { branch 'master' }
@@ -33,7 +33,7 @@ pipeline {
                 stage('Test Project') {
                     steps {
                         withMaven {
-                            sh "$MVN_CMD clean test"
+                            sh './mvnw clean test'
                         }
                     }
                     when { not { branch 'master' } }
@@ -47,7 +47,7 @@ pipeline {
                     steps {
                         withSonarQubeEnv('cessda-sonar') {
                             withMaven {
-                                sh "$MVN_CMD sonar:sonar"
+                                sh './mvnw sonar:sonar'
                             }
                         }
                         timeout(time: 1, unit: 'HOURS') {
@@ -59,7 +59,7 @@ pipeline {
                 stage('Deploy Project') {
                     steps {
                         withMaven {
-                            sh "$MVN_CMD site package deploy:deploy"
+                            sh './mvnw site package deploy:deploy'
                         }
                     }
                     when { branch 'master' }

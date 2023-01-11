@@ -1,16 +1,16 @@
-# CESSDA Metadata Validator 
+# CESSDA Metadata Validator
 
-This repository holds all documentation about CESSDA Metadata Validator project. 
+This repository holds all documentation about CESSDA Metadata Validator project.
 
-### Getting started as developer
+## Getting started as developer
 
 ```shell
 # Pull repository and change directory
-git clone git@bitbucket.org:cessda/cessda.cmv.git
+git clone https://github.com/cessda/cessda.cmv.git
 cd cessda.cmv
 
 # Generate the Maven site
-mvn clean site docker:build
+./mvnw clean site docker:build
 
 # Lauch local docker env
 docker-compose -f target/docker/context/docker-compose.yml up
@@ -22,6 +22,6 @@ xdg-open http://localhost:80
 docker-compose -f target/docker/context/docker-compose.yml down
 ```
 
-### License
+## License
 
 ![https://creativecommons.org/licenses/by/4.0/](https://i.creativecommons.org/l/by/4.0/88x31.png)
