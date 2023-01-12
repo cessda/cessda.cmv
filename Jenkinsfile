@@ -54,7 +54,7 @@ pipeline {
                             waitForQualityGate abortPipeline: true
                         }
                     }
-                    when { branch 'master' }
+                    when { branch 'main' }
                 }
                 stage('Deploy Project') {
                     steps {
