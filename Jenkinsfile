@@ -27,7 +27,7 @@ pipeline {
                             sh './mvnw clean site'
                         }
                     }
-                    when { branch 'master' }
+                    when { branch 'main' }
                 }
                 // Not running on master - test only (for PRs and integration branches)
                 stage('Test Project') {
@@ -36,7 +36,7 @@ pipeline {
                             sh './mvnw clean test'
                         }
                     }
-                    when { not { branch 'master' } }
+                    when { not { branch 'main' } }
                 }
                 stage('Record Issues') {
                     steps {
@@ -62,15 +62,15 @@ pipeline {
                             sh './mvnw site package deploy:deploy'
                         }
                     }
-                    when { branch 'master' }
+                    when { branch 'main' }
                 }
             }
         }
         stage("Run Downstream Jobs") {
             steps {
-                build job: 'cessda.cmv.server/master', wait: false
+                build job: 'cessda.cmv.server/main', wait: false
             }
-            when { branch 'master' }
+            when { branch 'main' }
         }
-	}
+    }
 }
