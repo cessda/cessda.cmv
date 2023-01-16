@@ -190,14 +190,14 @@
 		<url>https://www.cessda.eu/</url>
 	</organization>
 	<scm>
-		<url>https://bitbucket.org/cessda/cessda.cmv/</url>
+		<url>https://github.com/cessda/cessda.cmv/</url>
 	</scm>
 	<ciManagement>
 		<system>Jenkins</system>
 		<url>https://jenkins.cessda.eu/</url>
 	</ciManagement>
 	<issueManagement>
-		<url>https://bitbucket.org/cessda/cessda.cvm/issues</url>
+		<url>https://github.com/cessda/cessda.cvm/issues</url>
 		<system>Bitbucket</system>
 	</issueManagement>
 

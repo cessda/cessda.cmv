@@ -23,11 +23,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Deprecated
 
-- Moved cmv docs from here to [cessda.cmv.documentation](https://bitbucket.org/cessda/cessda.cmv.documentation)
+- Moved cmv docs from here to [cessda.cmv.documentation](https://github.com/cessda/cessda.cmv.documentation)
 
 ### Fixed
 
 - By CESSDA requested repairs (#110)
 
-[0.4.1]: https://bitbucket.org/cessda/cessda.cmv/src/v0.4.1
-[0.4.0]: https://bitbucket.org/cessda/cessda.cmv/src/v0.4.0
+[0.4.1]: https://github.com/cessda/cessda.cmv/src/v0.4.1
+[0.4.0]: https://github.com/cessda/cessda.cmv/src/v0.4.0
