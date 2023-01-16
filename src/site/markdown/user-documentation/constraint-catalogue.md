@@ -8,12 +8,12 @@
  different levels of validation strictness.
 
 | | Basic | Basic Plus | Standard | Extended | Strict |
-|-------------------------------------------------------------------------------------------|---------|------------|----------|----------|---------|
+|--|--|--|--|--|--|
 | [Mandatory Node](\#Mandatory_Node) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Mandatory Node if Parent Present](\#Mandatory_Node_if_Parent_Present) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
-| [Code Value of Controlled Vocabulary](\#Code_Value_of_Controlled_Vocabulary) | | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Code Value of Controlled Vocabulary](\#Code_Value_of_Controlled_Vocabulary) | |![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Descriptive Term of Controlled Vocabulary](\#Descriptive_Term_of_Controlled_Vocabulary ) | | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
-| [Recommended Node](\#Recommended_Node) | | | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Recommended Node](\#Recommended_Node) | | |  ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Fixed Value Node](\#Fixed_Value_Node]) | | | | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Optional Node](\#Optional_Node) | | | | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
 | [Maximum Node Occurrence](\#Maximum_Node_Occurrence]) | | | | | ![X](../images/cessda/table-x.png) |
@@ -34,7 +34,7 @@
 ### Representation 1
 
 * DDI Profile
-  
+
 ```xml
 <pr:Used xpath="/codeBook/docDscr/citation/titlStmt/titl" isRequired="true"/>
 ```
@@ -42,37 +42,37 @@
 #### Example 1
 
 * Valid, because *titl* element is present and not blank
-  
+
 ```xml
 <docDscr>
  <citation>
  <titlStmt>
  <titl>DDI2.5 XML CODEBOOK RECORD FOR STUDY NUMBER 2000</titl>
- </titlStmt> 
+ </titlStmt>
  </citation>
 </docDscr>
 ```
 
 * Invalid, because *titl* element is not present
-  
+
 ```xml
 <docDscr>
  <citation>
  <titlStmt>
- </titlStmt> 
+ </titlStmt>
  </citation>
 </docDscr>
 ```
 
 * Invalid, because *titl* element is blank
-  
+
 ```xml
 <docDscr>
  <citation>
  <titlStmt>
  <titl></titl>
  <!--or <titl> </titl> -->
- </titlStmt> 
+ </titlStmt>
  </citation>
 </docDscr>
 ```
@@ -195,6 +195,7 @@
 #### Representation 4
 
 * DDI Profile
+
 ```xml
 <pr:Used xpath="/codeBook/stdyDscr/citation/rspStmt/AuthEnty" isRequired="false"/>
 ```
