@@ -21,6 +21,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.4.0] - 2021-04-12
 
+## Changes
+
+- Use DDI Codebook Profile v1.0.4
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4580376.svg)](https://doi.org/10.5281/zenodo.4580376)
+
 ### Deprecated
 
 - Moved cmv docs from here to [cessda.cmv.documentation](https://bitbucket.org/cessda/cessda.cmv.documentation)
