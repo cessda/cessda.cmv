@@ -15,10 +15,10 @@
 
 ## Step 3
 
-* Enter an url for the document, e.g.
-  https://github.com/cessda/cessda.cmv.core/raw/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml
-* Enter an url for the profile, e.g.
-  https://github.com/cessda/cessda.cmv.core/raw/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml
+* Enter an URL for the document, e.g.
+  <https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml>
+* Enter an URL for the profile, e.g.
+  <https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml>
 * Select a validation gate
 * Click on button `Execute`
 
