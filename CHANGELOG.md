@@ -34,7 +34,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Deprecated
 
-- Moved cmv docs from here to [cessda.cmv.documentation](https://bitbucket.org/cessda/cessda.cmv.documentation)
+- Moved cmv docs from here to [cessda.cmv.documentation](https://github.com/cessda/cessda.cmv.documentation)
 
 ### Fixed
 
