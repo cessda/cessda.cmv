@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 *- Fixed (for any bug fixes)*
 *- Security (in case of vulnerabilities)*
 
+## [1.0.0]
+
+### Changed
+
+- Updated `cmv-core` to 1.0.0
+
 ## [0.4.1] - 2021-04-15
 
 ### Changed
@@ -21,7 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.4.0] - 2021-04-12
 
-## Changes
+## Changed
 
 - Use DDI Codebook Profile v1.0.4
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4580376.svg)](https://doi.org/10.5281/zenodo.4580376)
@@ -34,5 +40,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - By CESSDA requested repairs (#110)
 
-[0.4.1]: https://bitbucket.org/cessda/cessda.cmv/src/v0.4.1
-[0.4.0]: https://bitbucket.org/cessda/cessda.cmv/src/v0.4.0
+1.0.0: <https://github.org/cessda/cessda.cmv/releases/tag/v1.0.0>
+0.4.1: <https://github.org/cessda/cessda.cmv/releases/tag/v0.4.1>
+0.4.0: <https://github.org/cessda/cessda.cmv/releases/tag/v0.4.0>
