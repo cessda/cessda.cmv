@@ -40,6 +40,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - By CESSDA requested repairs (#110)
 
-1.0.0: <https://github.org/cessda/cessda.cmv/releases/tag/v1.0.0>
-0.4.1: <https://github.org/cessda/cessda.cmv/releases/tag/v0.4.1>
-0.4.0: <https://github.org/cessda/cessda.cmv/releases/tag/v0.4.0>
+[1.0.0]: https://github.org/cessda/cessda.cmv/releases/tag/v1.0.0
+[0.4.1]: https://github.org/cessda/cessda.cmv/releases/tag/v0.4.1
+[0.4.0]: https://github.org/cessda/cessda.cmv/releases/tag/v0.4.0
