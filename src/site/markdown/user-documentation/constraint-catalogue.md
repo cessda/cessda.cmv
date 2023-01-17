@@ -1,426 +1,488 @@
-### Constraint Catalogue
+# Constraint Catalogue
 
----
+* Each constraint is described by its semantic definition,
+  xml representation and example usage.
+* Constraints are assigned to pre-defined
+ [validation gates](../user-documentation/glossary.html#Validation_Gate)
+ `Basic`, `Basic Plus`, `Standard`, `Extended` and `Strict` to support
+ different levels of validation strictness.
 
-* Each constraint is described by its semantic definition, xml representation and example usage. 
-* Constraints are assigned to pre-defined [validation gates](../user-documentation/glossary.html#Validation_Gate) `Basic`, `Basic Plus`, `Standard`, `Extended` and `Strict` to support different levels of validation strictness.
+| | Basic | Basic Plus | Standard | Extended | Strict |
+|--|--|--|--|--|--|
+| [Mandatory Node](\#Mandatory_Node) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Mandatory Node if Parent Present](\#Mandatory_Node_if_Parent_Present) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Code Value of Controlled Vocabulary](\#Code_Value_of_Controlled_Vocabulary) | |![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Descriptive Term of Controlled Vocabulary](\#Descriptive_Term_of_Controlled_Vocabulary ) | | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Recommended Node](\#Recommended_Node) | | |  ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Fixed Value Node](\#Fixed_Value_Node]) | | | | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Optional Node](\#Optional_Node) | | | | ![X](../images/cessda/table-x.png) | ![X](../images/cessda/table-x.png) |
+| [Maximum Node Occurrence](\#Maximum_Node_Occurrence]) | | | | | ![X](../images/cessda/table-x.png) |
+| [Node in Profile](\#Node_in_Profile]) | | | | | ![X](../images/cessda/table-x.png) |
+| [Compilable XPath](\#Compilable_XPath) | | | | | |
+| [Predicate-less XPath](\#Predicate-less_XPath) | | | | | |
 
-|                                                                                           | Basic   | Basic Plus | Standard | Extended | Strict  |
-|-------------------------------------------------------------------------------------------|---------|------------|----------|----------|---------|
-| [Mandatory Node](\#Mandatory_Node)                                                        | ![X](../images/cessda/table-x.png)     | ![X](../images/cessda/table-x.png)        | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)     |
-| [Mandatory Node if Parent Present](\#Mandatory_Node_if_Parent_Present)                    | ![X](../images/cessda/table-x.png)     | ![X](../images/cessda/table-x.png)        | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)     |
-| [Code Value of Controlled Vocabulary](\#Code_Value_of_Controlled_Vocabulary)              |         | ![X](../images/cessda/table-x.png)        | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)     |
-| [Descriptive Term of Controlled Vocabulary](\#Descriptive_Term_of_Controlled_Vocabulary ) |         | ![X](../images/cessda/table-x.png)        | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)     |
-| [Recommended Node](\#Recommended_Node)                                                    |         |            | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)     |
-| [Fixed Value Node](\#Fixed_Value_Node])                                                   |         |            |          | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)     |
-| [Optional Node](\#Optional_Node)                                                          |         |            |          | ![X](../images/cessda/table-x.png)      | ![X](../images/cessda/table-x.png)     |
-| [Maximum Node Occurrence](\#Maximum_Node_Occurrence])                                     |         |            |          |          | ![X](../images/cessda/table-x.png)     |
-| [Node in Profile](\#Node_in_Profile])                                                     |         |            |          |          | ![X](../images/cessda/table-x.png)     |
-| [Compilable XPath](\#Compilable_XPath)                                                    |         |            |          |          |         |
-| [Predicate-less XPath](\#Predicate-less_XPath)                                            |         |            |          |          |         |
+## Mandatory Node
 
-### Mandatory Node
+### Definition 1
 
-#### Definition
-
-* An XML node (element or attribute) described by a predicate-less XPath expression is mandatory to be used within the metadata document. 
+* An XML node (element or attribute) described by a predicate-less XPath
+  expression is mandatory to be used within the metadata document.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
-* The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
+* The metadata document is valid, only if the element is present at least
+  once and the node is not blank, otherwise invalid.
 
-#### Representation
+### Representation 1
 
 * DDI Profile
-	```xml
-	<pr:Used xpath="/codeBook/docDscr/citation/titlStmt/titl" isRequired="true"/>
-	```
-#### Example
+
+```xml
+<pr:Used xpath="/codeBook/docDscr/citation/titlStmt/titl" isRequired="true"/>
+```
+
+#### Example 1
+
 * Valid, because *titl* element is present and not blank
-	```xml
-	<docDscr>
-	  <citation>
-	    <titlStmt>
-	      <titl>DDI2.5 XML CODEBOOK RECORD FOR STUDY NUMBER 2000</titl>
-	    </titlStmt>      
-	  </citation>
-	</docDscr>
-	```
-	
+
+```xml
+<docDscr>
+ <citation>
+ <titlStmt>
+ <titl>DDI2.5 XML CODEBOOK RECORD FOR STUDY NUMBER 2000</titl>
+ </titlStmt>
+ </citation>
+</docDscr>
+```
+
 * Invalid, because *titl* element is not present
-	```xml
-	<docDscr>
-	  <citation>
-	    <titlStmt>
-	    </titlStmt>      
-	  </citation>
-	</docDscr>
-	```
+
+```xml
+<docDscr>
+ <citation>
+ <titlStmt>
+ </titlStmt>
+ </citation>
+</docDscr>
+```
+
 * Invalid, because *titl* element is blank
-	```xml
-	<docDscr>
-	  <citation>
-	    <titlStmt>
-	      <titl></titl>
-	      <!--or <titl>  </titl> -->
-	    </titlStmt>      
-	  </citation>
-	</docDscr>
-	```
+
+```xml
+<docDscr>
+ <citation>
+ <titlStmt>
+ <titl></titl>
+ <!--or <titl> </titl> -->
+ </titlStmt>
+ </citation>
+</docDscr>
+```
 
 ### Recommended Node
 
-#### Definition
+#### Definition 2
 
-* An XML node (element or attribute) described by a predicate-less XPath expression is recommended to be used within the metadata document. 
+* An XML node (element or attribute) described by a predicate-less XPath
+  expression is recommended to be used within the metadata document.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
-* The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
+* The metadata document is valid, only if the element is present at least once
+  and the node is not blank, otherwise invalid.
 
-#### Representation
+#### Representation 2
 
 * DDI Profile
-	```xml
-	<pr:Used xpath="/codeBook/stdyDscr/citation/rspStmt/AuthEnty" isRequired="false">
-	  <pr:Instructions>
-	    <r:Content>
-	      <![CDATA[
-	        <Constraints>
-	          <RecommendedNodeConstraint/>
-	        </Constraints>
-	      ]]>
-	    </r:Content>
-	  </pr:Instructions>
-	</pr:Used>
-	```
 
-#### Example
+```xml
+<pr:Used xpath="/codeBook/stdyDscr/citation/rspStmt/AuthEnty" isRequired="false">
+ <pr:Instructions>
+ <r:Content>
+ <![CDATA[
+ <Constraints>
+ <RecommendedNodeConstraint/>
+ </Constraints>
+ ]]>
+ </r:Content>
+ </pr:Instructions>
+</pr:Used>
+```
+
+#### Example 2
+
 * Valid, because *AuthEnty* element is present and not blank
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <rspStmt>
-	      <AuthEnty>Lummis, T., University of Essex. Department of Sociology</AuthEnty>
-	    </rspStmt>
-	  </citation>
-	</stdyDscr>
-	```
+
+```xml
+<stdyDscr>
+ <citation>
+ <rspStmt>
+ <AuthEnty>Lummis, T., University of Essex. Department of Sociology</AuthEnty>
+ </rspStmt>
+ </citation>
+</stdyDscr>
+```
 
 * Invalid, because *AuthEnty* element is not present
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <rspStmt/>
-	  </citation>
-	</stdyDscr>
-	```
+
+```xml
+<stdyDscr>
+ <citation>
+ <rspStmt/>
+ </citation>
+</stdyDscr>
+```
+
 * Invalid, because *AuthEnty* element is blank
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <rspStmt>
-	      <AuthEnty></AuthEnty>
-	      <!--or <AuthEnty>     </AuthEnty> -->
-	    </rspStmt>
-	  </citation>
-	</stdyDscr>
-	```
+
+```xml
+<stdyDscr>
+ <citation>
+ <rspStmt>
+ <AuthEnty></AuthEnty>
+ <!--or <AuthEnty> </AuthEnty> -->
+ </rspStmt>
+ </citation>
+</stdyDscr>
+```
 
 ### Fixed Value Node
 
-#### Definition
+#### Definition 3
 
-* The metadata document is valid, only if the node value equals to the fixed value defined in the profile, otherwise invalid.
+* The metadata document is valid, only if the node value equals to the fixed
+  value defined in the profile, otherwise invalid.
 
-#### Representation
+#### Representation 3
 
 * DDI Profile
-	```xml
-    <pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept/@vocab"
-             defaultValue="DDI Analysis Unit"
-             fixedValue="true">
-    </pr:Used>
-	```
-#### Example
+
+```xml
+ <pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept/@vocab"
+ defaultValue="DDI Analysis Unit"
+ fixedValue="true">
+ </pr:Used>
+```
+
+#### Example 3
+
 * Valid, because *vocab* attribute value equals to "DDI Analysis Unit"
-	```xml
-    <sumDscr>
-      <anlyUnit>
-        <concept vocab="DDI Analysis Unit" />
-      </anlyUnit>
-    </sumDscr>
-	```
+
+```xml
+ <sumDscr>
+ <anlyUnit>
+ <concept vocab="DDI Analysis Unit" />
+ </anlyUnit>
+ </sumDscr>
+```
 
 * Invalid, because *vocab* attribute value does not equal to "DDI Analysis Unit"
-	```xml
-    <sumDscr>
-      <anlyUnit>
-        <concept vocab="DDI Analyseeinheit" />
-      </anlyUnit>
-    </sumDscr>
-	```
+
+```xml
+ <sumDscr>
+ <anlyUnit>
+ <concept vocab="DDI Analyseeinheit" />
+ </anlyUnit>
+ </sumDscr>
+```
 
 ### Optional Node
 
-#### Definition
+#### Definition 4
 
-* An XML node (element or attribute) described by a predicate-less XPath expression is optional to be used within the metadata document. 
+* An XML node (element or attribute) described by a predicate-less XPath
+  expression is optional to be used within the metadata document.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
-* The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
+* The metadata document is valid, only if the element is present at least
+  once and the node is not blank, otherwise invalid.
 
-#### Representation
+#### Representation 4
 
 * DDI Profile
-	```xml
-	<pr:Used xpath="/codeBook/stdyDscr/citation/rspStmt/AuthEnty" isRequired="false"/>
-	```
 
-#### Example
+```xml
+<pr:Used xpath="/codeBook/stdyDscr/citation/rspStmt/AuthEnty" isRequired="false"/>
+```
+
+#### Example 4
+
 * Valid, because *AuthEnty* element is present and not blank
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <rspStmt>
-	      <AuthEnty>Lummis, T., University of Essex. Department of Sociology</AuthEnty>
-	    </rspStmt>
-	  </citation>
-	</stdyDscr>
-	```
+
+```xml
+<stdyDscr>
+ <citation>
+ <rspStmt>
+ <AuthEnty>Lummis, T., University of Essex. Department of Sociology</AuthEnty>
+ </rspStmt>
+ </citation>
+</stdyDscr>
+```
 
 * Invalid, because *AuthEnty* element is not present
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <rspStmt/>
-	  </citation>
-	</stdyDscr>
-	```
+
+```xml
+<stdyDscr>
+ <citation>
+ <rspStmt/>
+ </citation>
+</stdyDscr>
+```
+
 * Invalid, because *AuthEnty* element is blank
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <rspStmt>
-	      <AuthEnty></AuthEnty>
-	      <!--or <AuthEnty>     </AuthEnty> -->
-	    </rspStmt>
-	  </citation>
-	</stdyDscr>
-	```
+
+```xml
+<stdyDscr>
+ <citation>
+ <rspStmt>
+ <AuthEnty></AuthEnty>
+ <!--or <AuthEnty> </AuthEnty> -->
+ </rspStmt>
+ </citation>
+</stdyDscr>
+```
 
 ### Mandatory Node if Parent Present
 
-#### Definition
+#### Definition 5
 
 * A node may only be mandatory if the parent node is present.
-* The metadata document is valid, only if - provided the parent node is present - the node itself is present at least once and is not blank, otherwise invalid.
+* The metadata document is valid, only if - provided the parent node is
+  present - the node itself is present at least once and is not blank,
+  otherwise invalid.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
 
-#### Representation
+#### Representation 5
 
 * DDI Profile
-	```xml
-	<pr:Used xpath="/codeBook/stdyDscr/citation/titlStmt/IDNo" isRequired="false"/>
-	<pr:Used xpath="/codeBook/stdyDscr/citation/titlStmt/IDNo/@agency" isRequired="false">
-	  <pr:Instructions>
-	    <r:Content>
-	      <![CDATA[
-	        <Constraints>
-	          <MandatoryNodeIfParentPresentConstraint/>
-	        </Constraints>
-	      ]]>
-	    </r:Content>
-	  </pr:Instructions>
-	</pr:Used>
-	```
 
-#### Example
+```xml
+<pr:Used xpath="/codeBook/stdyDscr/citation/titlStmt/IDNo" isRequired="false"/>
+<pr:Used xpath="/codeBook/stdyDscr/citation/titlStmt/IDNo/@agency" isRequired="false">
+ <pr:Instructions>
+ <r:Content>
+ <![CDATA[
+ <Constraints>
+ <MandatoryNodeIfParentPresentConstraint/>
+ </Constraints>
+ ]]>
+ </r:Content>
+ </pr:Instructions>
+</pr:Used>
+```
+
+#### Example 5
+
 * Valid, because *agency* element is present and not blank
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <titlStmt>
-	      <IDNo agency="GESIS">ZA2800</IDNo>
-	    </titlStmt>
-	  </citation>
-	</stdyDscr>
-	```
+
+```xml
+<stdyDscr>
+ <citation>
+ <titlStmt>
+ <IDNo agency="GESIS">ZA2800</IDNo>
+ </titlStmt>
+ </citation>
+</stdyDscr>
+```
+
 * Valid, because *IDNo* parent element is not present
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <titlStmt/>
-	  </citation>
-	</stdyDscr>
-	```
+
+```xml
+<stdyDscr>
+ <citation>
+ <titlStmt/>
+ </citation>
+</stdyDscr>
+```
+
 * Invalid, because *agency* element is not present
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <titlStmt>
-	       <IDNo>ZA2800</IDNo>
-	    </titlStmt>
-	  </citation>
-	</stdyDscr>
-	```
+
+```xml
+<stdyDscr>
+ <citation>
+ <titlStmt>
+ <IDNo>ZA2800</IDNo>
+ </titlStmt>
+ </citation>
+</stdyDscr>
+```
+
 * Invalid, because *agency* element is blank
-	```xml
-	<stdyDscr>
-	  <citation>
-	    <titlStmt>
-		  <IDNo agency="">ZA2800</IDNo>
-	    </titlStmt>
-	  </citation>
-	</stdyDscr>
-	```
 
-### Code Value of Controlled Vocabulary 
+```xml
+<stdyDscr>
+ <citation>
+ <titlStmt>
+ <IDNo agency="">ZA2800</IDNo>
+ </titlStmt>
+ </citation>
+</stdyDscr>
+```
 
-#### Definition
+### Code Value of Controlled Vocabulary
 
-* A field element in a metadata document uses a controlled vocabulary (CV). 
-* The metadata document is valid, only if the field element is a codeValue of the given CV, otherwise invalid.
+#### Definition 6
 
-#### Representation
+* A field element in a metadata document uses a controlled vocabulary (CV).
+* The metadata document is valid, only if the field element is a codeValue
+  of the given CV, otherwise invalid.
+
+#### Representation 6
 
 * DDI Profile
-	```xml
-	<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept">
-	  <pr:Instructions>
-	    <r:Content>
-	      <![CDATA[
-	        <Constraints>
-	          <CodeValueOfControlledVocabularyConstraint/>
-	        </Constraints>
-	      ]]>
-	    </r:Content>
-	  </pr:Instructions>
-	</pr:Used>
-	<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept/@vocabURI">
-	  <pr:Instructions>
-	    <r:Content>
-	      <![CDATA[
-	        <Constraints>
-	          <ControlledVocabularyRepositoryConstraint>
-                <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0</RepositoryUri>
-                <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
-	          </ControlledVocabularyRepositoryConstraint>
-	          <ControlledVocabularyRepositoryConstraint>
-                <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/1.0</RepositoryUri>
-                <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
-	          </ControlledVocabularyRepositoryConstraint>
-	        </Constraints>
-	      ]]>
-	    </r:Content>
-	  </pr:Instructions>
-	</pr:Used>
-	```
 
-#### Example
-* Valid, because *Individual* is a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0) and *TextUnit* is a codeValue of [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
-	```xml
-	<stdyInfo>
-	 <sumDscr>
-	   <anlyUnit>
-	     <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">Individual</concept>
-	     <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/1.0">TextUnit</concept>
-	   </anlyUnit>
-	 </sumDscr>
-	</stdyInfo>
-	```
-	
-* Invalid, because *Person* is **not** a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
-	```xml
-	<stdyInfo>
-	 <sumDscr>
-	   <anlyUnit>
-	     <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">Person</concept>
-	   </anlyUnit>
-	 </sumDscr>
-	</stdyInfo>
-	```
+```xml
+<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept">
+ <pr:Instructions>
+ <r:Content>
+ <![CDATA[
+ <Constraints>
+ <CodeValueOfControlledVocabularyConstraint/>
+ </Constraints>
+ ]]>
+ </r:Content>
+ </pr:Instructions>
+</pr:Used>
+<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept/@vocabURI">
+ <pr:Instructions>
+ <r:Content>
+ <![CDATA[
+ <Constraints>
+ <ControlledVocabularyRepositoryConstraint>
+ <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0</RepositoryUri>
+ <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
+ </ControlledVocabularyRepositoryConstraint>
+ <ControlledVocabularyRepositoryConstraint>
+ <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/1.0</RepositoryUri>
+ <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
+ </ControlledVocabularyRepositoryConstraint>
+ </Constraints>
+ ]]>
+ </r:Content>
+ </pr:Instructions>
+</pr:Used>
+```
+
+#### Example 6
+
+* Valid, because *Individual* is a codeValue of
+  [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+  and *TextUnit* is a codeValue of
+  [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
+
+```xml
+<stdyInfo>
+ <sumDscr>
+ <anlyUnit>
+ <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">Individual</concept>
+ <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/1.0">TextUnit</concept>
+ </anlyUnit>
+ </sumDscr>
+</stdyInfo>
+```
+
+* Invalid, because *Person* is **not** a codeValue of
+  [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+
+```xml
+<stdyInfo>
+ <sumDscr>
+ <anlyUnit>
+ <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">Person</concept>
+ </anlyUnit>
+ </sumDscr>
+</stdyInfo>
+```
 
 ### Descriptive Term of Controlled Vocabulary
 
-#### Definition
+#### Definition  7
 
 * A field element in a metadata document uses a controlled vocabulary (CV).
-* The metadata document is valid, only if the field element is a descriptive term of the given CV, otherwise invalid.
+* The metadata document is valid, only if the field element is a descriptive
+  term of the given CV, otherwise invalid.
 
-#### Representation
+#### Representation 7
 
 * DDI Profile
-	```xml
-	<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit">
-	  <pr:Instructions>
-	    <r:Content>
-	      <![CDATA[
-	        <Constraints>
-	          <DescriptiveTermOfControlledVocabularyConstraint/>
-	        </Constraints>
-	      ]]>
-	    </r:Content>
-	  </pr:Instructions>
-	</pr:Used>
-	<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept/@vocabURI">
-	  <pr:Instructions>
-	    <r:Content>
-	      <![CDATA[
-	        <Constraints>
-	          <ControlledVocabularyRepositoryConstraint>
-                <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0</RepositoryUri>
-                <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
-	          </ControlledVocabularyRepositoryConstraint>
-	        </Constraints>
-	      ]]>
-	    </r:Content>
-	  </pr:Instructions>
-	</pr:Used>
-	```
 
-#### Example
-* Valid, because *Media unit: Sound* is a descriptive term of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
-	```xml
-	<stdyInfo>
-	 <sumDscr>
-	  <anlyUnit xml:lang="en">Media unit: Sound
-	   <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">MediaUnit.Sound</concept>
-	  </anlyUnit>
-	 </sumDscr>
-	</stdyInfo>
-	```
+```xml
+<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit">
+ <pr:Instructions>
+ <r:Content>
+ <![CDATA[
+ <Constraints>
+ <DescriptiveTermOfControlledVocabularyConstraint/>
+ </Constraints>
+ ]]>
+ </r:Content>
+ </pr:Instructions>
+</pr:Used>
+<pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept/@vocabURI">
+ <pr:Instructions>
+ <r:Content>
+ <![CDATA[
+ <Constraints>
+ <ControlledVocabularyRepositoryConstraint>
+ <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0</RepositoryUri>
+ <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
+ </ControlledVocabularyRepositoryConstraint>
+ </Constraints>
+ ]]>
+ </r:Content>
+ </pr:Instructions>
+</pr:Used>
+```
 
-* Invalid, because *Sound media unit* is **not** a descriptive term of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
-	```xml
-	<stdyInfo>
-	 <sumDscr>
-	  <anlyUnit xml:lang="en">Sound media unit
-	   <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">MediaUnit.Sound</concept>
-	  </anlyUnit>
-	 </sumDscr>
-	</stdyInfo>
-	```
+#### Example 7
+
+* Valid, because *Media unit: Sound* is a descriptive term of
+ [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+
+```xml
+<stdyInfo>
+ <sumDscr>
+ <anlyUnit xml:lang="en">Media unit: Sound
+ <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">MediaUnit.Sound</concept>
+ </anlyUnit>
+ </sumDscr>
+</stdyInfo>
+```
+
+* Invalid, because *Sound media unit* is **not** a descriptive term of
+ [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+
+```xml
+<stdyInfo>
+ <sumDscr>
+ <anlyUnit xml:lang="en">Sound media unit
+ <concept vocabURI="https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0">MediaUnit.Sound</concept>
+ </anlyUnit>
+ </sumDscr>
+</stdyInfo>
+```
 
 ### Compilable XPath
 
-An XPath expression must be compilable. This constraint is used only for profile document validation.
+An XPath expression must be compilable. This constraint is used only for
+profile document validation.
 
-```
+```xml
 # valid
 /some/compilable/xpath
 ```
 
-```
+```xml
 # invalid
 /some/not compilable/xpath/because-of-blank
 ```
 
 ### Predicate-less XPath
 
-An XPath expression must not contain predicates. This constraint is used only for profile document validation.
+An XPath expression must not contain predicates.
+This constraint is used only for profile document validation.
 
-```
+```xml
 # valid
 /some/xpath/without/precicate
 ```
 
-```
+```xml
 # invalid
 /some/xpath/with/precicate[@version='1.0']
 ```
