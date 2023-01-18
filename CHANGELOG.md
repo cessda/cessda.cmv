@@ -17,13 +17,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-Add Release Report to directory root 144
-([#144](https://github.com/cessda/cessda.cmv/issues/144))
+- Add Release Report to directory root ([#144](https://github.com/cessda/cessda.cmv/issues/144))
 
 ### Changed
 
-Improve SQAaaS score
-([#146](https://github.com/cessda/cessda.cmv/issues/146))
+- Improve SQAaaS score ([#146](https://github.com/cessda/cessda.cmv/issues/146))
+- Updated `cmv-core` to 1.0.0
 
 ## [0.4.1] - 2021-04-15
 
@@ -32,6 +31,11 @@ Improve SQAaaS score
 - Update `cmv-core` to 0.4.1
 
 ## [0.4.0] - 2021-04-12
+
+## Changed
+
+- Use DDI Codebook Profile v1.0.4
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4580376.svg)](https://doi.org/10.5281/zenodo.4580376)
 
 ### Deprecated
 
@@ -42,5 +46,6 @@ Improve SQAaaS score
 
 - By CESSDA requested repairs (#110)
 
-[0.4.1]: https://github.com/cessda/cessda.cmv/src/v0.4.1
-[0.4.0]: https://github.com/cessda/cessda.cmv/src/v0.4.0
+[1.0.0]: https://github.org/cessda/cessda.cmv/releases/tag/v1.0.0
+[0.4.1]: https://github.org/cessda/cessda.cmv/releases/tag/v0.4.1
+[0.4.0]: https://github.org/cessda/cessda.cmv/releases/tag/v0.4.0
